@@ -1,0 +1,35 @@
+// client
+.client {
+    .steps-item {
+        h4 {
+            font-weight: 600;
+        }
+        .steps-item__content {
+            p {
+                max-width: 304px;
+            }
+        }
+    }
+    .steps-item__btn {
+        margin-top: 20px;
+    }
+    .steps-item_orange {
+        h4 {
+            max-width: 285px;
+        }
+    }
+}
+
+.steps-grid_lg {
+    margin-top: 10px;
+    .steps-item_lg_img {
+        grid-column: 4 span;
+        height: 100%;
+    }
+}
+
+.steps-grid_sm {
+    grid-template-columns: repeat(8, 1fr);
+    grid-column: 8 span;
+
+}

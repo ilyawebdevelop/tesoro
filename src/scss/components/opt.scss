@@ -1,0 +1,25 @@
+// opt
+.opt-intro {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
+    background-size: 800px;
+    padding-top: 0;
+    .breadcrumbs__list {
+        position: absolute;
+    }
+    .container {
+        position: relative;
+    }
+    .intro-left {
+        padding-top: 117px;
+        padding-bottom: 100px;
+    }
+    .intro__title {
+        max-width: 910px;
+    }
+    .intro__text {
+        max-width: 490px;
+        margin-bottom: 40px;
+    }
+}

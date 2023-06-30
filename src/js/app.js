@@ -49,7 +49,7 @@ document.querySelectorAll('.product-sect').forEach(n => {
   });
 });
 
-// reviews-slider
+// quality-slider
 const qualitySlider = document.querySelector('.quality-slider');
 var mySwiperQuality = new Swiper(qualitySlider, {
   slidesPerView: 2,
@@ -69,7 +69,6 @@ function change() {
   if (offer) {
     offer.innerHTML = (mySwiperQuality.realIndex + 1) + '/' + (mySwiperQuality.slides.length);
   }
-
 }
 
 change();
@@ -149,4 +148,33 @@ var mySwiperProducts = new Swiper(productSlider, {
       watchSlidesProgress: true,
     }
   },
+});
+
+// exclusive-slider
+const exclusiveSlider = document.querySelector('.exclusive-slider');
+var mySwiperExclusive = new Swiper(exclusiveSlider, {
+  slidesPerView: 2,
+  spaceBetween: 10,
+  navigation: {
+    nextEl: '.exclusive .nav-arrow-right',
+    prevEl: '.exclusive .nav-arrow-left',
+  },
+  watchSlidesProgress: true,
+  watchSlidesVisibility: true,
+  runCallbacksOnInit: true,
+});
+
+function change_exclusive() {
+  var offer = document.querySelector('.exclusive .slider-count');
+  if (offer) {
+    offer.innerHTML = (mySwiperExclusive.realIndex + 1) + '/' + (mySwiperExclusive.slides.length);
+  }
+}
+
+change_exclusive();
+document.querySelector(".exclusive .nav-arrow-right")?.addEventListener("click", change_exclusive);
+document.querySelector(".exclusive .nav-arrow-left")?.addEventListener("click", change_exclusive);
+
+mySwiperExclusive.on('slideChange', function () {
+  change_exclusive();
 });
