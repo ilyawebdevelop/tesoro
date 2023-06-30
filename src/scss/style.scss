@@ -1,0 +1,44 @@
+// стили для свайпера
+@import "../../node_modules/swiper/swiper-bundle.min";
+
+// bootstrap v5.0.2
+@import "./bootstrap.min";
+
+// Базовые подключения
+@import 'vars';
+@import 'mixins';
+@import 'fonts';
+@import 'reset';
+@import 'specifications';
+
+// Подключения компонентов страницы
+@import "./components/btn";
+@import "./components/burger";
+@import "./components/modal";
+@import "./components/tabs";
+@import "./components/slider";
+@import "./components/breadcrumbs";
+@import "./components/pagination";
+@import "./components/header";
+@import "./components/product-card";
+@import "./components/intro";
+@import "./components/advantages";
+@import "./components/categories";
+@import "./components/comfort";
+@import "./components/quality";
+@import "./components/designer";
+@import "./components/sales";
+@import "./components/individual";
+@import "./components/reviews";
+@import "./components/blog";
+@import "./components/accordion";
+@import "./components/questions";
+@import "./components/catalog-action";
+@import "./components/product";
+@import "./components/steps";
+@import "./components/callback";
+
+@import "./components/footer";
+
+
+

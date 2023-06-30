@@ -1,0 +1,134 @@
+.product-sect {
+    padding-top: 80px;
+    .title-wrapper {
+        margin-bottom: 40px;
+    }
+}
+.product-slider { 
+    border-radius: 16px;
+    overflow: visible;
+}
+.product-card {
+    position: relative;  
+   transition: box-shadow .2s linear;
+    border-radius: 16px;
+    &:hover {
+        box-shadow: 0px 7px 20px 0px rgba(45, 47, 84, 0.10);        
+    }
+
+    &__content {
+        margin-top: 12px;
+        padding-right: 16px;
+        padding-left: 16px;
+        padding-bottom: 16px;
+    }
+    &__title {
+        margin-bottom: 4px;
+        height: 44px;
+        overflow: hidden;
+        -webkit-line-clamp: 2;
+        display: -webkit-box;
+        /* Включаем флексбоксы */
+        -webkit-box-orient: vertical;
+        /* Вертикальная ориентация */
+        transition: color .2s linear;
+        &:hover {
+            color: #FD7033;
+        }
+    }
+
+    &__like {
+        position: absolute;
+        top: 10px;
+        right: 13px;
+        padding: 8px;
+        border-radius: 50%;
+        width: 40px;
+        min-width: 40px;
+        height: 40px;
+        transition: background-color .2s linear;
+        &.active {
+            svg {
+                fill: #FD7033;
+                stroke: #FD7033;
+            }
+        }
+        &:hover {
+            background-color: rgba(#fff, 50%);
+            svg {
+                fill: #FD7033;
+                stroke: #FD7033;
+            }
+        }
+
+        svg {
+            width: 19px;
+            height: 19px;
+            fill: transparent;
+            stroke: rgba(41, 46, 68, 0.4);
+        }
+    }
+
+    &__img {
+        img {
+            border-radius: 16px;
+        }
+    }
+
+    &__cart {
+        background-color: #FD7033;
+        border-radius: 50%;
+        padding: 8px;
+        transition: background-color .2s linear;
+        &.active {
+            background-color: #1C1F63;
+            &:hover {
+                background-color: #1C1F63;
+            }
+        }
+        &:hover {
+            background-color: $main-text;
+        }
+
+        svg {
+            width: 24px;
+            height: 24px;
+            fill: transparent;
+            stroke: #fff;
+        }
+    }
+    &__price {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;        
+    }
+    &__sale {
+        background: #0E1A2F;      
+    }
+    &__new {
+        background-color: #FD7033;
+    }
+    &__hit {
+        background-color: #46487A;
+    }
+    &__round {
+        color: #fff;
+        width: 40px;
+        height: 40px;
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 13px;       
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        border-radius: 50%;
+        position: absolute;
+        left: 16px;
+        top: 10px;
+        z-index: 0;
+    }
+}
+
+.product-card__not_availaable {
+    color: rgba(41, 46, 68, 0.40);
+}

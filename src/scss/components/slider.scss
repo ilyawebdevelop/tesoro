@@ -1,0 +1,13 @@
+.nav-arrow {  
+    svg {
+        width: 40px;
+        height: 40px;
+        fill: #FD7033;
+        // stroke: #FD7033;
+    }
+    &.swiper-button-disabled {
+        svg {
+            fill: rgba(221, 221, 221, 0.7);
+        }
+    }
+}

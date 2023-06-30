@@ -1,0 +1,102 @@
+// pagination
+.pagination {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+    margin-top: 78px;
+
+    ul {
+        column-gap: 10px;
+        li {
+            color: #46487A;
+            a {
+                font-size: 14px;
+                line-height: 20px;
+                font-weight: 500;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: background-color .2s linear;
+                border-radius: 20px;
+                background: #F2F5F8;
+
+                @media (max-width: 991px) {
+                    width: 36px;
+                    height: 36px;
+                }
+
+                &:hover {
+                    background-color: #1C1F63;
+                    color: #fff;
+
+                }
+            }
+
+            &.active {
+
+                @media (max-width: 991px) {
+                    background: transparent;
+                }
+
+                &:hover {
+                    opacity: 1;
+                }
+
+                a {                   
+                    color: #fff;
+                    pointer-events: none;
+                    background-color: #FD7033;
+                }
+            }
+            &.disabled {
+                a {
+                    background-color: #F2F5F8;
+                    pointer-events: none;
+                    color: rgba(221, 221, 221, 0.70);
+                }
+            }
+        }
+    }
+}
+
+.pag-arrow {  
+    transition: opacity .2s linear;
+    svg {
+        stroke: #46487A;
+        fill: transparent;
+        width: 20px;
+        height: 20px;
+    }
+
+    &:hover {
+        a {
+            background-color: #1C1F63;
+        }
+        svg {        
+            stroke: #fff;
+        }
+    }
+
+    &.pag-arrow-none {  
+        &:hover {
+            a {
+                background-color: #F2F5F8;
+            }
+        }  
+        a {
+            &:hover {               
+                svg {
+                    stroke: #46487A;
+                }
+            }
+            pointer-events: none;
+            svg {
+                stroke: rgba(#DDD, .7);
+                fill:#F2F5F8;
+            }
+        }
+    }
+}

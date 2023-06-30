@@ -1,0 +1,37 @@
+// quality
+.quality {
+    padding-top: 80px;
+    &-text {
+        font-size: 18px;
+        line-height: 22px;
+        padding: 10px 0;
+        color: #fff;
+        white-space: nowrap;
+        // animation: marquee 7s infinite linear;
+        // padding-left: 100%;     
+        column-gap: 30px;
+
+        &-wrapper {
+            background: #FD7033;
+            border-radius: 8px;
+            overflow: hidden;
+            width: 100%;
+        }
+    }
+    &-slide {
+        width: 373px;
+        &:nth-child(even){
+           width: 756px;
+        }
+        &__img {
+            height: 538px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 16px;
+        }
+    }
+
+    &-title-wrapper {
+        margin-bottom: 40px;
+    }
+}

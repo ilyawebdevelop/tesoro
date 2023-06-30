@@ -1,0 +1,86 @@
+// catalog-action
+.catalog-action {
+    .select-wrapper {
+        background-color: #F2F5F8;
+        border-radius: 18px;
+        position: relative;
+        transition: background-color .2s linear;
+        &:hover {
+            background-color: #FD7033;
+            .select-arrow {
+                stroke: #fff;
+                fill: #FD7033;
+            }
+            .select-sort {
+                stroke: #fff;
+                fill: #FD7033;
+            }
+            select {
+                color: #fff;
+            }
+        }
+
+        select {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            font-size: 13px;
+            line-height: 16px;
+            color: #46487A;
+            padding: 8px 26px 8px 20px;
+            cursor: pointer;
+            // transition: color .2s linear;
+            &.select_sort {
+                padding-right: 32px;
+            }
+            option {
+                color: #46487A;
+            }
+        }
+        .select-arrow {
+            width: 10px;
+            height: 5px;
+            fill: #fff;
+            stroke: #46487A;
+            position: absolute;
+            right: 10px;
+            transform: translateY(-50%);
+            top: 50%;
+        } 
+        .select-sort {
+            width: 16px;
+            height: 16px;
+            fill: #fff;
+            stroke: #46487A;
+            position: absolute;
+            right: 10px;
+            transform: translateY(-50%);
+            top: 50%;
+        }  
+    }
+    .select-reset {
+        font-size: 13px;
+        color: rgba(41, 46, 68, 0.40);
+        line-height: 16px;
+        cursor: pointer;
+        padding: 8px;
+        transition: color .2s linear;
+        &:hover {
+            color: #FD7033;
+            .select-reset-icon {
+                stroke: #FD7033;
+            }
+        }
+        &-icon {
+            width: 12px;
+            height: 12px;
+            stroke: rgba(41, 46, 68, 0.40);
+            
+        }
+    }
+    .sort-name {
+        font-size: 13px;
+        line-height: 16px;
+        color: #46487A;
+    }
+}

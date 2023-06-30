@@ -1,0 +1,108 @@
+// categories
+.categories {
+    &-grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 10px;
+    }
+    &-item {
+        grid-column: 6 span;
+        overflow: hidden;
+        border-radius: 16px;
+        position: relative;
+        &:hover {
+            img {
+                transform: scale(1.05);
+            }
+        }
+
+        img {
+            border-radius: 16px;
+            width: 100%;
+            height: 526px;
+            object-fit: cover;
+            transition: transform .2s linear;
+        }
+
+        span {
+            position: absolute;
+            left: 24px;
+            bottom: 21px;
+        }
+        .btn--white {
+            &:hover {
+                color: #46487A;
+                background-color: unset;
+                background: #fff;
+            }
+        }
+    }
+}
+
+.categories-item__title_orange {
+    background: #FD7033;
+    border-radius: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 500;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    letter-spacing: 0.66px;
+}
+.categories-item__title_transparent {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 28px;    
+    text-transform: uppercase;
+    color: #FFFFFF;    
+}
+.categories-item_sm {
+    grid-column: 4 span;
+    img {
+        height: 414px;
+    }    
+}
+.catalog-main .section-title  {
+    margin-bottom: 40px;
+}
+.catalog {
+    .section-title {
+        margin-bottom: 40px;
+        &.catalog__title {
+            margin-bottom: 25px;
+        }
+    }
+}
+.catalog-row {
+    &:not(:last-child){
+        margin-bottom: 70px;
+    }
+    &.product-sect {
+        padding-top: 0;
+    }
+    .title-wrapper {
+        margin-bottom: 40px;
+    }
+}
+.catalog-row__title {
+    &:hover {
+        h3 {
+            color: #FD7033;
+            border-color: #FD7033;
+        }       
+    }
+}
+.catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 10px;
+    row-gap: 40px;
+    margin-top: 40px;
+}
+.catalog-item {
+    grid-column: 3 span;
+}

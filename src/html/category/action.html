@@ -1,0 +1,61 @@
+<!-- catalog-action -->
+<div class="catalog-action d-flex justify-content-between">
+    <div class="catalog-action__left d-flex gap-2 align-items-center">
+        <div class="select-wrapper">
+            <select name="size" id="size">
+                <option value="1" disabled selected>Размер</option>
+                <option value="M">M</option>
+                <option value="S">S</option>
+                <option value="XL">XL</option>
+                <option value="L">L</option>
+            </select>
+            <svg class="select-arrow">
+                <use xlink:href="img/icons/icons.svg#select-arrow"></use>
+            </svg>
+        </div><!-- /select-wrapper -->
+        <div class="select-wrapper">
+            <select name="color" id="color">
+                <option value="1" disabled selected>Цвет</option>
+                <option value="red">red</option>
+                <option value="white">white</option>
+                <option value="black">black</option>
+                <option value="orange">orange</option>
+            </select>
+            <svg class="select-arrow">
+                <use xlink:href="img/icons/icons.svg#select-arrow"></use>
+            </svg>
+        </div><!-- /select-wrapper -->
+        <div class="select-wrapper">
+            <select name="sostav" id="sostav">
+                <option value="1" disabled selected>Состав</option>
+                <option value="Хлопок">Хлопок</option>
+                <option value="Хлопок">Хлопок</option>
+                <option value="Ткань">Ткань</option>
+                <option value="Ткань">Ткань</option>
+            </select>
+            <svg class="select-arrow">
+                <use xlink:href="img/icons/icons.svg#select-arrow"></use>
+            </svg>
+        </div><!-- /select-wrapper -->
+        <div class="select-reset d-flex gap-1 align-items-center">
+            <svg class="select-reset-icon">
+                <use xlink:href="img/icons/icons.svg#select-reset"></use>
+            </svg>
+            <span>
+                Сбросить
+            </span>
+        </div><!-- /select-reset -->
+    </div>
+    <div class="catalog-action__right d-flex align-items-center gap-2">
+        <span class="sort-name">Сортировать:</span>
+        <div class="select-wrapper">
+            <select class="select_sort" name="sort" id="sort">             
+                <option value="popular" selected>По популярности</option>
+                <option value="date">По дате</option>              
+            </select>
+            <svg class="select-sort">
+                <use xlink:href="img/icons/icons.svg#sort"></use>
+            </svg>
+        </div><!-- /select-wrapper -->
+    </div>
+</div>

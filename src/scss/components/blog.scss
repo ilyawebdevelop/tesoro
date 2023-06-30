@@ -1,0 +1,29 @@
+// blog
+.blog {
+    padding-top: 80px;
+    .title-wrapper {
+        margin-bottom: 40px;
+    }
+    &-slide {
+        &__img {
+            height: 320px;
+            border-radius: 16px;
+            width: 100%;
+            object-fit: cover;
+        }
+        &__title {
+            transition: color .2s linear;
+            height: 22px;
+            overflow: hidden;
+            -webkit-line-clamp: 1;
+            display: -webkit-box;
+            /* Включаем флексбоксы */
+            -webkit-box-orient: vertical;
+            /* Вертикальная ориентация */
+            letter-spacing: 0.01em;
+            &:hover {
+                color: #FD7033;
+            }
+        }     
+    }
+}

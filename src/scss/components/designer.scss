@@ -1,0 +1,38 @@
+// designer
+.designer {
+    padding-top: 80px;
+    background: #FD7033;
+
+    &-icon {
+        margin-bottom: 130px;
+    }
+
+    &__title {
+        color: #fff;
+    }
+
+    &-grid {
+        display: grid;
+
+        gap: 10px;
+
+        &_first {
+            grid-template-columns: 1fr 277px;
+            margin-bottom: 10px;
+        }
+
+        &_second {
+            grid-template-columns: 277px 1fr;
+        }
+    }
+
+    &-image {
+        width: 100%;
+        height: 287px;
+        border-radius: 16px;
+        object-fit: cover;
+    }
+}
+.designer-grid-wrapper {
+    padding-left: 45px;
+}

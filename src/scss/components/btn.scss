@@ -1,0 +1,153 @@
+// btn
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 26px;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 700;
+    padding-left: 28px;
+    padding-right: 28px;
+    width: fit-content;
+
+    &--white {
+        color: #46487A;
+        background-color: #fff;
+        padding-top: 16px;
+        padding-bottom: 15px;
+        transition: background-color .2s linear, color .2s linear;
+
+        &:hover {
+            background-color: #FD7033;
+            color: #fff;
+        }
+    }
+
+    &--orange {
+        background-color: #FD7033;
+        height: 48px;
+        color: #fff;
+        transition: background-color .2s linear, color .2s linear;
+
+        &:hover {
+            background-color: #46487A;
+        }
+    }
+
+    &--light {
+        color: #1C1F63;
+        font-size: 14px;      
+        font-weight: 700;
+        background: #F2F5F8;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        transition: background-color .2s linear;
+        &:hover {
+            background-color: #1C1F63;
+            color: #fff;
+        }
+    }
+
+    &--blue {
+        background-color: #0069FF;
+        color: #fff;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        font-weight: 600;
+        font-size: 16px;
+        padding-left: 16px;
+        padding-right: 16px;
+        transition: background-color .2s linear, color .2s linear;
+
+        &:hover {
+            background-color: #FD7033;
+        }
+    }
+}
+
+.catalog-btn {
+    background: #FD7033;
+    border-radius: 44px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 12px;
+    padding-right: 26px;
+    padding-left: 26px;
+    transition: background .2s linear;
+
+    &:hover {
+        background: #46487A;
+    }
+
+    &>span {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+    }
+}
+
+.catalog-btn__icon {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3px;
+
+    span {
+        width: 18px;
+        height: 2px;
+        background-color: #fff;
+    }
+}
+
+.footer__btn {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.designer__text {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #fff;
+    max-width: 320px;
+}
+
+.designer__btn {
+    &:hover {
+        color: #fff;
+        background-color: #46487A;
+    }
+}
+.product-cart__btn {
+    width: 260px;
+   font-size: 16px;
+   line-height: 20px;
+    column-gap: 12px;
+    font-weight: 500;
+   
+    svg {
+        fill: transparent;
+        stroke: #fff;
+        width: 22px;
+        height: 22px;
+    }
+}
+.steps-item__btn{
+    color: #FD7033;
+    background-color: #fff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 26px;
+    width: fit-content;
+    padding-left: 28px;
+    padding-right: 28px;
+    transition: background-color .2s linear, color .2s linear;
+    &:hover {
+        background-color: #46487A;
+        color: #fff;
+    }
+}

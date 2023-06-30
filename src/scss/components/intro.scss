@@ -1,0 +1,31 @@
+// intro
+.intro {
+    background: #F2F5F8; 
+    padding-bottom: 0;
+    @media(max-width: 991px){
+        padding-top: 28px;
+    }
+    &-left {
+        padding-top: 143px;
+        padding-bottom: 143px;
+    }
+    &__title {
+        font-size: 68px;
+        line-height: 65px;
+        max-width: 432px;
+    }
+    &-image {
+      position: relative;
+      width: 100%;
+      height: 100%;
+        img {
+            position: absolute;
+            left: -78px;
+            top: 0;
+            width: 900px;
+            min-width: 900px;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+}
