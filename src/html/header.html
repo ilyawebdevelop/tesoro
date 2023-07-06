@@ -13,7 +13,7 @@
   <div class="header-bottom header-content">
     <div class="container">
       <div class="row header-content__top align-items-center">
-        <div class="col-lg-3">
+        <div class="col-lg-3 d-none d-lg-block">
           <div class="d-flex align-items-center gap-3">
             <a href="/" class="logo"><img src="@img/header/logo.svg" alt="logo"></a>
             <p class="logo-descr">Фабрика носков г. Иркутск</p>
@@ -22,14 +22,18 @@
         <div class="col-lg-6">
           <form class="header-search mx-auto" action="#">
             <input type="search" placeholder="Поиск">
+            <button class="d-none d-lg-flex" type="submit"><img src="@img/icons/search.svg" alt="icon"></button>
+            <button class="d-flex d-lg-none header-search__btn" type="submit"><img src="@img/icons/search-white.svg" alt="icon"></button>
+            <div class="header-form-close d-flex d-lg-none"><img src="img/icons/back.svg" alt="icon"></div>
           </form><!-- /header-search -->
         </div>
-        <div class="col-lg-3 text-end">
+        <div class="col-lg-3 text-end d-none d-lg-block">
           <a class="header-phone" href="tel:88001234567">8 (800) 123-45-67</a>
         </div>
       </div>
+
       <div class="row header-content__bottom align-items-center">
-        <div class="col-lg-2">
+        <div class="col-lg-2 col-6 d-flex">
           <button class="header-catalog-btn catalog-btn">
             <div class="catalog-btn__icon">
               <span></span>
@@ -38,9 +42,19 @@
             </div>
             <span>Каталог</span>
           </button>
+          <!-- Hamburger Menu -->
+          <div class="hamburger" id="toggle">
+            <div class="top-bun"></div>
+            <div class="meat"></div>
+            <div class="bottom-bun"></div>
+          </div><!-- /Hamburger Menu -->
+          <div class="d-flex d-lg-none flex-column align-items-center gap-3">
+            <a href="/" class="logo logo-sm"><img src="@img/header/logo-sm.svg" alt="logo"></a>
+          </div>
         </div>
-        <div class="col-lg-7">
-          <nav class="header__nav">
+        <div class="col-lg-8 header__nav">
+
+          <nav>
             <ul class="header__nav-list">
               <li><a href="#">О бренде</a></li>
               <li class="has-child">
@@ -55,9 +69,16 @@
               <li><a href="#">Индивидуальный дизайн</a></li>
               <li><a href="#">Блог</a></li>
             </ul>
+            <div class="btn-close">
+              <svg class="like-icon">
+                <use xlink:href="img/icons/icons.svg#close"></use>
+              </svg>
+            </div>
+            <a class="header-phone d-block d-lg-none" href="tel:88001234567">8 (800) 123-45-67</a>
+
           </nav>
         </div>
-        <div class="col-lg-3">
+        <div class="col-6 col-lg-2">
           <div class="actions">
             <ul>
               <li>
@@ -74,7 +95,7 @@
                   </svg>
                 </a>
               </li>
-              <li>
+              <li class="d-none d-sm-block">
                 <a href="#" target="_blank">
                   <svg>
                     <use xlink:href="img/icons/icons.svg#person"></use>
@@ -82,6 +103,9 @@
                 </a>
               </li>
             </ul>
+            <button class="mobile-search">
+              <img src="@img/icons/search.svg" alt="icon">
+            </button>
           </div>
         </div>
       </div>

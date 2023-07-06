@@ -1,12 +1,18 @@
 // steps
 .steps {
     padding-top: 85px;
+    @media(max-width: 991px){
+        padding-top: 0px;
+    }
 
     &-grid {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         column-gap: 10px;
         row-gap: 15px;
+        @media(max-width: 991px){
+            row-gap: 10px;
+        }
     }
 
     &-item {
@@ -24,11 +30,26 @@
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
+        @media(max-width: 991px){
+            padding-left: 20px;
+            padding-right: 20px;
+            height: 280px;
+        }
+        @media(max-width: 767px){
+            grid-column: 6 span;
+        }
+        @media(max-width: 575px){
+            grid-column: 12 span;
+            height: fit-content;
+        }
         &__num {
             color: #FD7033;
             font-size: 22px;
             font-weight: 600;
             letter-spacing: 0.66px;
+            @media(max-width: 575px){
+                margin-bottom: 20px;
+            }
         }
         h4 {
            color: #46487A;
@@ -46,10 +67,18 @@
             background-color: #FD7033;
             justify-content: flex-end;
             row-gap: 12px;
+            @media(max-width: 575px){
+                row-gap: 15px;
+            }
             h4 {
                 color: #fff;
                 margin-bottom: 0;
             }
         }
+    }
+}
+.steps-item-image {
+    @media(max-width: 575px){
+        height: 250px;
     }
 }

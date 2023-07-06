@@ -5,6 +5,9 @@
     align-items: center;
     row-gap: 30px;
     margin-top: 78px;
+    @media(max-width: 991px){
+        margin-top: 30px;
+    }
 
     ul {
         column-gap: 10px;
@@ -24,8 +27,8 @@
                 background: #F2F5F8;
 
                 @media (max-width: 991px) {
-                    width: 36px;
-                    height: 36px;
+                    width: 39px;
+                    height: 39px;
                 }
 
                 &:hover {

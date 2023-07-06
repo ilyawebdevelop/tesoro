@@ -6,6 +6,19 @@
     border: 1px solid #E3E9EF;
     border-radius: 16px;
     cursor: pointer;
+    p {
+        color: #46487A;
+        @media(max-width: 991px){
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+    @media(max-width: 991px){
+        padding-top: 16px;
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-bottom: 16px;
+    }
 
     &.collapsed {
         .faq__button {

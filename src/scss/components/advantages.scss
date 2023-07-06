@@ -1,30 +1,115 @@
 // advantages
-.advantages{
+.advantages {
     padding-top: 80px;
+    @media(max-width: 991px){
+        padding-top: 60px;
+    }
+
     &-grid {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         gap: 10px;
+        @media(max-width: 575px){
+            row-gap: 8px;
+        }
     }
+
     &-item {
         grid-column: 4 span;
         background: #F2F5F8;
-        border-radius: 16px;      
-        padding-left: 20px;  
+        border-radius: 16px;
+        padding-left: 20px;
         padding-right: 27px;
         padding-bottom: 30px;
-        padding-top: 8px;       
-     
+        padding-top: 8px;
+        @media(max-width: 991px){
+            padding-left: 5px;
+            padding-right: 10px;
+            padding-bottom: 8px;
+        }
+        @media(max-width: 767px){
+            grid-column: 6 span;
+        }
+        @media(max-width: 575px){
+            padding-left: 0;
+            grid-column: 12 span;
+            display: flex;
+            align-items: center;
+            border-radius: 8px;
+        }
+        &__img {
+            @media(max-width: 575px){
+                width: 85px;
+            }
+        }
         &__title {
             letter-spacing: 0.03em;
             text-transform: uppercase;
-            font-weight: 600;   
-            padding-left: 20px;      
-            display: block;   
+            font-weight: 600;
+            padding-left: 20px;
+            display: block;
+            z-index: 1;
+            @media(max-width: 991px){
+                font-size: 14px;
+                line-height: 140%;
+                letter-spacing: 0.42px;
+            }
+            @media(max-width: 575px){
+                height: fit-content;
+            }
         }
     }
 }
+
 .catalog-main .advantages {
     padding-bottom: 120px;
     padding-top: 10px;
+    @media(max-width: 991px){
+        padding-bottom: 60px;
+    }
+}
+
+.advantages-item_gost {
+    position: relative;
+    overflow: hidden;
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 190px;
+        right: -31px;
+        top: -12px;
+        background: url('@img/advantages/gost.png') no-repeat center center / contain;
+        height: 110px;
+    }
+}
+
+.advantages-item_ozon {
+    position: relative;
+    overflow: hidden;
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 220px;
+        right: -41px;
+        top: -12px;
+        background: url('@img/advantages/ozon.png') no-repeat center center / contain;
+        height: 110px;
+    }
+}
+
+.advantages-item_new {
+    position: relative;
+    overflow: hidden;
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 220px;
+        right: -41px;
+        top: -12px;
+        background: url('@img/advantages/new.png') no-repeat center center / contain;
+        height: 110px;
+    }
 }

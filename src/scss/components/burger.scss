@@ -4,12 +4,15 @@
   align-self: center;
   flex-direction: column;
   justify-content: space-between;
-  width: 18px;
-  height: 14px;
-  min-width: 15px;
-  margin-right: 20px;
+  width: 32px;
+  min-width: 32px;
+  height: 32px; 
+  margin-right: 16px;
   cursor: pointer;
   position: relative;
+  background-color: #FD7033;
+  border-radius: 4px;
+  padding: 10px 7px;
 
   // transition: background 0.2s linear;  
   display: none;
@@ -23,7 +26,7 @@
   align-self: flex-start;
   height: 2px;
   width: 100%;
-  background: #222;
+  background: #fff;
   border-radius: 10px;
 }
 
@@ -34,6 +37,6 @@
 .top-bun.active,
 .meat.active,
 .bottom-bun.active {
-  opacity: 0;
+
 }
 

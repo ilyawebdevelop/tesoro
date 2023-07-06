@@ -1,5 +1,8 @@
 // catalog-action
 .catalog-action {
+    @media(max-width: 767px){
+        row-gap: 12px;
+    }
     .select-wrapper {
         background-color: #F2F5F8;
         border-radius: 18px;
@@ -30,6 +33,10 @@
             padding: 8px 26px 8px 20px;
             cursor: pointer;
             // transition: color .2s linear;
+            @media(max-width: 991px){
+                font-size: 11px;
+                line-height: 14px;
+            }
             &.select_sort {
                 padding-right: 32px;
             }
@@ -65,6 +72,10 @@
         cursor: pointer;
         padding: 8px;
         transition: color .2s linear;
+        @media(max-width: 991px){
+            font-size: 11px;
+            line-height: 13px;
+        }
         &:hover {
             color: #FD7033;
             .select-reset-icon {
@@ -82,5 +93,14 @@
         font-size: 13px;
         line-height: 16px;
         color: #46487A;
+        @media(max-width: 991px){
+            font-size: 11px;
+            line-height: 13px;
+        }
+    }
+}
+.catalog-action__left {
+    @media(max-width: 991px){
+        flex-wrap: wrap;
     }
 }

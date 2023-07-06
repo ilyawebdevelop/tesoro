@@ -2,27 +2,71 @@
 .designer {
     padding-top: 80px;
     background: #FD7033;
+    @media(max-width: 991px){
+        border-radius: 24px;
+        padding-top: 33px;
+        padding-bottom: 33px;
+    }
 
     &-icon {
         margin-bottom: 130px;
+        @media(max-width: 1199px){
+            margin-bottom: 50px;
+        }
+        @media(max-width: 991px){
+            margin-bottom: 30px;
+        }
     }
 
     &__title {
         color: #fff;
     }
+    &__text {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        color: #fff;
+        max-width: 320px;
+        @media(max-width: 991px){
+            color: rgba(255, 255, 255, 0.90);
+            margin-top: 24px;           
+        }
+    }
 
     &-grid {
         display: grid;
-
         gap: 10px;
+        @media(max-width: 767px){
+            gap: 5px;
+        }
 
         &_first {
             grid-template-columns: 1fr 277px;
             margin-bottom: 10px;
+
+            @media(max-width: 1199px) {
+                grid-template-columns: 1fr 237px;
+            }
+            @media(max-width: 767px){
+                grid-template-columns: 1fr 200px;
+                margin-bottom: 5px;
+            }
+            @media(max-width: 575px){
+                grid-template-columns: 1fr 125px;
+            }
         }
 
         &_second {
             grid-template-columns: 277px 1fr;
+
+            @media(max-width: 1199px) {
+                grid-template-columns: 237px 1fr;
+            }
+            @media(max-width: 767px){
+                grid-template-columns: 200px 1fr;
+            }
+            @media(max-width: 575px){
+                grid-template-columns: 125px 1fr;
+            }
         }
     }
 
@@ -31,8 +75,20 @@
         height: 287px;
         border-radius: 16px;
         object-fit: cover;
+
+        @media(max-width: 1199px) {
+            height: 200px;
+        }
+        @media(max-width: 575px){
+            height: 132px;
+        }
     }
 }
+
 .designer-grid-wrapper {
     padding-left: 45px;
+    @media(max-width: 991px){
+        padding-left: 0;
+       margin-top: 32px;
+    }
 }

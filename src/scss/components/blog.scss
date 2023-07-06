@@ -1,8 +1,20 @@
 // blog
 .blog {
     padding-top: 80px;
+    @media(max-width: 991px){
+        padding-top: 0px;
+    }
     .title-wrapper {
         margin-bottom: 40px;
+        @media(max-width: 991px){
+            margin-bottom: 25px;
+        }
+    }
+    &-slider {
+        overflow: visible;
+        @media(max-width: 575px){
+            padding-right: 65px;
+        }
     }
     &-slide {
         &__img {
@@ -10,6 +22,13 @@
             border-radius: 16px;
             width: 100%;
             object-fit: cover;
+            @media(max-width: 991px){
+                border-radius: 8px;
+                height: 220px;
+            }
+            @media(max-width: 575px){
+                height: 69vw;
+            }
         }
         &__title {
             transition: color .2s linear;
@@ -21,9 +40,38 @@
             -webkit-box-orient: vertical;
             /* Вертикальная ориентация */
             letter-spacing: 0.01em;
+            @media(max-width: 991px){              
+                letter-spacing: 0.14px;
+                line-height: 140%;
+                -webkit-line-clamp: 2;
+                height: 42px;
+            }
             &:hover {
                 color: #FD7033;
             }
         }     
+    }
+}
+.blog-page {
+    padding-top: 0;
+}
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 10px;
+    row-gap: 40px;
+    @media(max-width: 767px){
+        row-gap: 12px;
+    }
+}
+.blog-item {
+    grid-column: 4 span;
+    @media(max-width: 767px){
+        grid-column: 6 span;
+    }
+    img {
+        @media(max-width: 575px){
+            height: 43vw;
+        }
     }
 }

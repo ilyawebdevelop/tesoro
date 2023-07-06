@@ -1,19 +1,31 @@
 .product-sect {
     padding-top: 80px;
+    @media(max-width: 991px){
+        padding-top: 0;
+    }
     .title-wrapper {
         margin-bottom: 40px;
+        @media(max-width: 991px){
+            margin-bottom: 20px;
+        }
     }
 }
 .product-slider { 
     border-radius: 16px;
     overflow: visible;
+    @media(max-width: 575px){
+        padding-right: 73px;
+    }
 }
 .product-card {
     position: relative;  
    transition: box-shadow .2s linear;
     border-radius: 16px;
     &:hover {
-        box-shadow: 0px 7px 20px 0px rgba(45, 47, 84, 0.10);        
+        box-shadow: 0px 7px 20px 0px rgba(45, 47, 84, 0.10);   
+        @media(max-width: 575px){
+            box-shadow: none;
+        }     
     }
 
     &__content {
@@ -21,6 +33,10 @@
         padding-right: 16px;
         padding-left: 16px;
         padding-bottom: 16px;
+        @media(max-width: 575px){
+            padding-right: 0;
+            padding-left: 0;
+        }
     }
     &__title {
         margin-bottom: 4px;
@@ -28,10 +44,22 @@
         overflow: hidden;
         -webkit-line-clamp: 2;
         display: -webkit-box;
+        color: #46487A;
         /* Включаем флексбоксы */
         -webkit-box-orient: vertical;
         /* Вертикальная ориентация */
         transition: color .2s linear;
+        @media(max-width: 991px){
+            height: 40px;
+        }
+        @media(max-width: 575px){
+            -webkit-line-clamp: 3;
+            height: 59px;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 140%;
+            letter-spacing: 0.14px;
+        }
         &:hover {
             color: #FD7033;
         }
@@ -47,6 +75,10 @@
         min-width: 40px;
         height: 40px;
         transition: background-color .2s linear;
+        @media(max-width: 575px){
+            right: 8px;
+            top: 8px;
+        }
         &.active {
             svg {
                 fill: #FD7033;
@@ -72,6 +104,15 @@
     &__img {
         img {
             border-radius: 16px;
+            height: 280px;
+            width: 100%;
+            object-fit: cover;
+            @media(max-width: 767px){
+                height: 35vw;
+            }
+            @media(max-width: 575px){
+                height: 35vw;
+            }
         }
     }
 
@@ -101,6 +142,10 @@
         font-weight: 500;
         font-size: 24px;
         line-height: 29px;        
+        @media(max-width: 575px){
+            font-size: 15px;
+            color: #0E1A2F;
+        }
     }
     &__sale {
         background: #0E1A2F;      
@@ -126,9 +171,18 @@
         left: 16px;
         top: 10px;
         z-index: 0;
+        @media(max-width: 575px){
+            left: 4px;
+            top: 4px;
+        }
     }
 }
 
 .product-card__not_availaable {
     color: rgba(41, 46, 68, 0.40);
+    @media(max-width: 575px){
+        font-size: 13px;
+        line-height: 16px;
+        font-weight: 500;
+    }
 }

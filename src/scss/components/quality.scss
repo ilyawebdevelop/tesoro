@@ -1,6 +1,17 @@
 // quality
 .quality {
     padding-top: 80px;
+
+    @media(max-width: 991px) {
+        padding-top: 0;
+    }
+
+    h2 {
+        @media(max-width: 575px) {
+            max-width: 170px;
+        }
+    }
+
     &-text {
         font-size: 18px;
         line-height: 22px;
@@ -11,6 +22,11 @@
         // padding-left: 100%;     
         column-gap: 30px;
 
+        @media(max-width: 991px) {
+            font-size: 13px;
+            line-height: 16px;
+        }
+
         &-wrapper {
             background: #FD7033;
             border-radius: 8px;
@@ -18,20 +34,76 @@
             width: 100%;
         }
     }
+
+    &-slider {
+        @media(max-width: 991px){
+            overflow: visible;
+        }
+        @media(max-width: 575px) {
+            padding-right: 65px;          
+        }
+    }
+
     &-slide {
         width: 373px;
-        &:nth-child(even){
-           width: 756px;
+        display: grid;
+        grid-template-columns: 373px auto;
+        column-gap: 10px;
+
+        @media(max-width: 1199px) {
+            grid-template-columns: 323px auto;
         }
+
+        @media(max-width: 991px) {
+            grid-template-columns: 1fr;
+            row-gap: 8px;
+        }
+
         &__img {
             height: 538px;
             width: 100%;
             object-fit: cover;
             border-radius: 16px;
+
+            @media(max-width: 1199px) {
+                height: 440px;
+            }
+
+            &:nth-child(1) {
+                @media(max-width: 991px) {
+                    height: 390px;
+                }
+
+                @media(max-width: 767px) {
+                    height: 340px;
+                }
+
+                @media(max-width: 575px) {
+                    height: 95vw;
+                }
+            }
+
+            &:nth-child(2) {
+                @media(max-width: 991px) {
+                    height: 220px;
+                }
+
+                @media(max-width: 767px) {
+                    height: 180px;
+                }
+
+                @media(max-width: 575px) {
+                    height: 170px;
+                }
+            }
         }
     }
 
     &-title-wrapper {
         margin-bottom: 40px;
+
+        @media(max-width: 991px) {
+            margin-bottom: 20px;
+        }
     }
 }

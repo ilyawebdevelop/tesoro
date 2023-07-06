@@ -1,0 +1,227 @@
+// checkout
+.checkout {
+    h4 {
+        color: #1C1F63;
+        text-transform: uppercase;
+        padding-top: 20px;
+    }
+
+    h2 {
+        margin-bottom: 40px;
+    }
+
+    &-total {
+        border-radius: 24px;
+        background: #F2F5F8;
+        padding: 40px;
+
+        h4 {
+            margin-bottom: 20px;
+            padding-top: 0;
+        }
+
+        &__content {
+            padding-bottom: 20px;
+            border-bottom: 1px solid #46487A;
+        }
+
+        &__sum {
+            margin-top: 20px;
+        }
+
+        &__price {
+            color: #0E1A2F;
+            font-size: 22px;
+            line-height: 130%;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.total-content__item {
+    display: flex;
+    justify-content: space-between;
+    color: #0E1A2F;
+
+    &:not(:last-child) {
+        margin-bottom: 14px;
+    }
+}
+
+.checkout-title {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #E3E9EF;
+    margin-bottom: 30px;
+}
+
+.cart-item__close {
+    position: relative;
+    top: 7px;
+    &:hover {
+        svg {
+            fill: rgba(#292E44, 100%);
+        }
+    }
+
+    svg {
+        fill: rgba(#292E44, 40%);
+        stroke: transparent;
+        width: 12px;
+        height: 12px;
+    }
+}
+
+.cart-head {
+    display: grid;
+    grid-template-columns: 80px 220px 160px 80px 80px auto;
+    column-gap: 20px;
+    margin-bottom: 25px;
+    color: #46487A;
+    font-weight: 600;
+}
+
+.cart-body {
+    &__row {
+        display: grid;
+        grid-template-columns: 80px 232px 150px 80px 80px auto;
+        column-gap: 20px;
+    }
+}
+
+.cart-item {
+    margin-bottom: 25px;
+
+    h5 {
+        color: #1C1F63;
+    }
+
+    .quantity__field input {
+        width: 60px;
+    }
+}
+
+.cart-item__image {
+    max-height: 80px;
+    width: auto;
+    border-radius: 16px;
+}
+
+.cart-item__price {
+    color: #0E1A2F;
+    height: fit-content;
+    position: relative;
+    top: 8px;
+
+    &_total {
+        color: #0E1A2F;
+        position: relative;
+        top: 8px;
+    }
+}
+
+.variations-cart-wrapper {
+    display: flex;
+    column-gap: 4px;
+}
+
+.variations-cart {
+    display: flex;
+    column-gap: 4px;
+    font-size: 13px;
+    line-height: 16px;
+
+    span {
+        color: #0E1A2F;
+
+        &:first-child {
+            color: #46487A;
+        }
+    }
+
+}
+.personal-form__grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.personal-form__col {
+    grid-column: 6 span;
+    input {
+        width: 100%;
+    }
+}
+.checkbox-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 10px;
+    &_del {
+        .checkbox-item {
+            grid-column: 3 span;
+        }
+    }
+    &_pay {
+        .checkbox-item {
+            grid-column: 4 span;
+        }
+    }
+}
+.checkbox-item {
+   
+    input {
+        display: none;
+        &:checked {
+            &+label {
+                border: 1.5px solid #FD7033;
+                svg {
+                    stroke: #FD7033;
+                }
+            }
+        }
+    }
+    label {
+        background: #F2F5F8;
+        border: 1.5px solid transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 11px;
+        padding: 30px 18px;
+        border-radius: 24px;
+        height: 100%;
+        color: #46487A;
+        cursor: pointer;
+        &:hover {
+            h5 {
+                color: #FD7033;
+                &.title-dark {
+                    color: #FD7033;                  
+                }
+            }
+        }
+        h5 {
+            color: #46487A;
+            text-align: center;
+            transition: color .2s linear;
+            &.title-dark {
+                color: #1C1F63;
+              
+            }
+        }
+        p {
+           text-align: center;
+            font-size: 13px;
+            line-height: 16px;
+        }
+        svg {
+            width: 40px;
+            height: 40px;
+            fill: transparent;
+            stroke: #46487A;
+        }
+    }
+}
+.personal-form__col_address {
+    margin-top: 30px;
+}

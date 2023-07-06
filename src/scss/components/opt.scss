@@ -5,6 +5,9 @@
     background-position: right center;
     background-size: 800px;
     padding-top: 0;
+    @media(max-width: 991px){
+        padding-bottom: 0;
+    }
     .breadcrumbs__list {
         position: absolute;
     }

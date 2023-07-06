@@ -1,23 +1,40 @@
 // comfort
 .comfort {
     padding-top: 80px;
+    @media(max-width: 991px){
+        padding-top: 0;
+    }
     &__title {
         max-width: 600px;
         margin-bottom: 46px;
+        @media(max-width: 991px){
+            margin-bottom: 26px;
+        }
     }
 
     &-grid {
         display: grid;
-
         gap: 10px;
+        @media(max-width: 575px){
+            row-gap: 8px;
+        }
 
         &_first {
             grid-template-columns: 1fr 280px 1fr;
             margin-bottom: 10px;
+            @media(max-width: 991px){
+                grid-template-columns: 1fr;
+            }
+            @media(max-width: 575px){
+               margin-bottom: 8px;
+            }
         }
 
         &_second {
             grid-template-columns: 280px auto 280px;
+            @media(max-width: 991px){
+                grid-template-columns: 1fr;
+            }
         }
     }
 
@@ -26,6 +43,10 @@
         border-radius: 16px;
         height: 260px;
         position: relative;
+        @media(max-width: 991px){
+            height: fit-content;
+            border-radius: 8px;
+        }
 
         &__content {
             display: flex;
@@ -35,10 +56,27 @@
             padding-left: 40px;
             padding-right: 45px;
             padding-bottom: 32px;
+            @media(max-width: 1199px){
+                padding-right: 15px;
+            }
+            @media(max-width: 991px){
+                height: 202px;
+            }
+            @media(max-width: 575px){
+                height: fit-content;
+                padding-top: 25px;
+                padding-bottom: 25px;
+                padding-left: 65px;
+                padding-right: 30px;
+            }
 
             p {
                 color: $main-text;
                 max-width: 410px;
+                @media(max-width: 575px){
+                    font-size: 14px;
+                    line-height: 20px;
+                }
             }
         }
 
@@ -48,6 +86,13 @@
             object-fit: cover;
             border-radius: 16px;
             height: 260px;
+            @media(max-width: 991px){
+                height: 255px;
+                border-radius: 8px;
+            }
+            @media(max-width: 575px){
+                height: 210px;
+            }
         } 
 
         &__title {
@@ -56,6 +101,11 @@
             font-weight: 500;
             margin-bottom: 16px;
             max-width: 420px;
+            @media(max-width: 575px){
+                font-size: 14px;
+                line-height: 130%;
+                margin-bottom: 8px;
+            }
         }
 
         &__icon {
@@ -63,8 +113,14 @@
             width: 37px;
             left: 38px;
             top: 20px;
+            @media(max-width: 575px){
+                left: 15px;
+            }
             &_second {
                 left: 27px;
+                @media(max-width: 575px){
+                    left: 20px;
+                }
             }
         }
     }

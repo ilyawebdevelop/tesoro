@@ -4,12 +4,15 @@
         <div class="row footer-top">
             <div class="col-lg-3 d-flex flex-column justify-content-between">
                 <div class="footer__logo-wrapper">
-                    <a href="/" class="logo footer__logo mb-2"><img src="@img/footer/footer-logo.svg" alt="logo"></a>
-                    <p class="footer__logo-descr">Фабрика носков г. Иркутск</p>
-                    <p class="fw-semibold mb-3 mt-4">Оставьте свой отзыв или задайте нам вопрос</p>
+                    <div class="d-flex gap-4 gap-lg-0 d-lg-block align-items-center">
+                        <a href="/" class="logo footer__logo mb-0 mb-lg-2"><img src="@img/footer/footer-logo.svg"
+                                alt="logo"></a>
+                        <p class="footer__logo-descr">Фабрика носков г. Иркутск</p>
+                    </div>
+                    <p class="fw-semibold mb-3 mt-3 mt-lg-4 footer-quest">Оставьте свой отзыв или задайте нам вопрос</p>
                     <div class="btn btn--orange footer__btn">Отправить сообщение</div>
                 </div><!-- /footer__logo-wrapper -->
-                <div class="footer-market">
+                <div class="footer-market d-none d-lg-block">
                     <p class="footer__logo-descr mb-3">Мы на маркетплейсе</p>
                     <a href="#" class="btn btn--blue">TESORO на OZON</a>
                 </div>
@@ -17,7 +20,7 @@
             </div>
             <div class="col-lg-9">
                 <div class="row footer-top__row">
-                    <div class="col-lg-4 footer-nav-wrapper-first">
+                    <div class="col-6 col-xl-4 footer-nav-wrapper-first">
                         <h5 class="mb-4 title-light">КАТАЛОГ</h5>
                         <nav class="footer-nav">
                             <h5 class="footer-nav__title mb-3 title-dark"><a href="#">Мужские</a></h5>
@@ -30,7 +33,7 @@
                             </ul>
                         </nav>
                     </div>
-                    <div class="col-lg-4 footer-nav-wrapper">
+                    <div class="col-6 col-xl-4 footer-nav-wrapper footer-nav-wrapper-second">
                         <nav class="footer-nav">
                             <h5 class="footer-nav__title mb-3 title-dark"><a href="#">Женские</a></h5>
                             <ul class="footer-nav__list">
@@ -41,7 +44,7 @@
                             </ul>
                         </nav>
                     </div>
-                    <div class="col-lg-4 footer-nav-wrapper">
+                    <div class="col-6 col-xl-4 footer-nav-wrapper footer-nav-wrapper-third">
                         <nav class="footer-nav">
                             <h5 class="footer-nav__title mb-3 title-dark"><a href="#">Женские</a></h5>
                             <h5 class="footer-nav__title mb-3 title-dark"><a href="#">Подарочные наборы</a></h5>
@@ -50,7 +53,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4">
+                    <div class="col-6 col-xl-4">
                         <nav class="footer-nav">
                             <h5 class="mb-4 title-light">ИНФОРМАЦИЯ</h5>
                             <ul class="footer-nav__list">
@@ -63,17 +66,56 @@
                             </ul>
                         </nav>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-6 col-xl-4">
                         <nav class="footer-nav">
                             <h5 class="mb-4 title-light">КОНТАКТЫ</h5>
                             <ul class="footer-nav__list">
-                                <li><a class="title-dark fw-semibold footer-phone" href="tel:88001234567">8 914 922 2500</a></li>
-                                <li><a href="mailto:sock.irk@outlook.com">sock.irk@outlook.com</a></li>                            
+                                <li><a class="title-dark fw-semibold footer-phone" href="tel:88001234567">8 914 922
+                                        2500</a></li>
+                                <li><a href="mailto:sock.irk@outlook.com">sock.irk@outlook.com</a></li>
                             </ul>
+                            <a class="footer-place d-block d-lg-none" href="#">г. Иркутск, ул. Марии Ульяновой, 13а, 4
+                                этаж</a>
+                            <div class="socials footer-socials mt-2 d-block d-lg-none">
+                                <ul class="footer-socials__list">
+                                    <li>
+                                        <a href="#">
+                                            <svg class="footer-socials_telegram">
+                                                <use xlink:href="img/icons/icons.svg#telegram"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <svg class="footer-socials_whatsapp">
+                                                <use xlink:href="img/icons/icons.svg#whatsapp"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <svg class="footer-socials_insta">
+                                                <use xlink:href="img/icons/icons.svg#instagram"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </nav>
                     </div>
-                    <div class="col-lg-4 pt-5">
-                        <a href="#">г. Иркутск, ул. Марии Ульяновой, 13а, 4 этаж</a>
+                    <div class="col-12 d-block d-lg-none">
+                        <p class="contacts-descr">
+                            * проект Meta Platforms Inc., деятельность которой в России запрещена
+                        </p>
+                    </div>
+                    <div class="col-12 mt-4 footer-market d-block d-lg-none">
+                        <p class="footer__logo-descr footer__logo-descr_full mb-3">Мы на маркетплейсе</p>
+                        <a href="#" class="btn btn--blue">TESORO на OZON</a>
+                    </div>
+
+
+                    <div class="col-lg-4 pt-5 d-none d-lg-block">
+                        <a class="footer-place" href="#">г. Иркутск, ул. Марии Ульяновой, 13а, 4 этаж</a>
                         <div class="socials footer-socials mt-2">
                             <ul class="footer-socials__list">
                                 <li>
@@ -99,7 +141,8 @@
                                 </li>
                             </ul>
                         </div>
-                        <p class="contacts-descr">* проект Meta Platforms Inc., деятельность которой в России запрещена</p>
+                        <p class="contacts-descr">* проект Meta Platforms Inc., деятельность которой в России запрещена
+                        </p>
                     </div>
                 </div>
             </div>

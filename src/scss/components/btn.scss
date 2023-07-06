@@ -109,12 +109,7 @@
     line-height: 17px;
 }
 
-.designer__text {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    color: #fff;
-    max-width: 320px;
-}
+
 
 .designer__btn {
     &:hover {
@@ -149,5 +144,41 @@
     &:hover {
         background-color: #46487A;
         color: #fff;
+    }
+}
+.contacts-btn {
+    height: 49px;
+    font-size: 16px;
+    line-height: 100%;
+}
+.history-item__btn{
+  width: 128px;
+}
+.history-item__btn_cancel {
+    background-color: #fff;
+}
+.history-item__btn_cancel {
+    background-color: #fff;
+}
+.address-item__btn {
+    background-color: #fff;
+    color: #46487A;
+}
+.address__btn {
+    margin-top: 30px;
+    @media(max-width: 991px){
+        margin-top: 20px;
+    }
+}
+.personal-form__btn_change {
+    margin-top: 40px;
+}
+.checkout-total__btn {
+    margin-top: 20px;
+    width: 100%;
+}
+.header-catalog-btn {
+    @media(max-width: 991px){
+        display: none;
     }
 }

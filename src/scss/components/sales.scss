@@ -1,4 +1,7 @@
 // sales
 .sales {
     padding-top: 80px;
+    @media(max-width: 991px){
+        padding-top: 60px;
+    }
 }

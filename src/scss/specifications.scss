@@ -25,7 +25,7 @@ body {
 
   @media (max-width: 991px) {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 140%;
   }
 }
 
@@ -52,7 +52,7 @@ section {
   padding-bottom: 80px;
 
   @media(max-width: 991px) {
-    padding-bottom: 35px;
+    padding-bottom: 60px;
   }
 
   // &.section-first {
@@ -127,7 +127,7 @@ section {
 
 @media (max-width: 575px) {
   .container {
-    padding: 0 20px;
+    padding: 0 10px;
   }
 }
 
@@ -163,8 +163,8 @@ h2 {
   line-height: 46px;
 
   @media(max-width: 991px) {
-    font-size: 20px;
-    line-height: 22px;
+    font-size: 24px;
+    line-height: 110%;
   }
 }
 
@@ -196,8 +196,9 @@ h5 {
   font-weight: $semibold;
 
   @media(max-width: 991px) {
-    font-size: 13px;
-    line-height: 18px;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0.14px;
   }
 }
 
@@ -231,6 +232,9 @@ h5 {
   font-size: 13px;
   line-height: 16px;
   color: rgba(41, 46, 68, 0.4);
+  @media(max-width: 991px){
+    font-size: 11px;
+  }
 }
 
 .border-b-light {
@@ -240,6 +244,9 @@ h5 {
 
 .page-title {
   margin-bottom: 40px;
+  @media(max-width: 991px){
+    margin-bottom: 20px;
+  }
 }
 
 .form-light {
@@ -268,6 +275,10 @@ h5 {
     &__text {
       color: rgba(255, 255, 255, 0.60);
       font-size: 14px;
+      @media(max-width: 991px){
+        font-size: 12px;
+        line-height: 16px;
+      }
       a {
         display: inline-block;
       }
@@ -317,6 +328,9 @@ h5 {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   column-gap: 16px; 
+  @media(max-width: 991px){
+    column-gap: 10px;
+  }
   .input-wrapper {
     grid-column: 6 span;
   }

@@ -1,9 +1,15 @@
 // individual
 .individual {
+    @media(max-width: 991px){
+        padding-bottom: 50px;
+    }
     &-grid {
         display: grid;
         grid-template-columns: 50% 50%;
         column-gap: 10px;
+        @media(max-width: 767px){
+            grid-template-columns: 1fr;
+        }
     }
 
     &-item {
@@ -13,15 +19,43 @@
         padding-top: 30px;
         padding-bottom: 36px;
         padding-right: 96px;
+        @media(max-width: 991px){
+            padding-right: 20px;
+            padding-right: 30px;
+        }
+        @media(max-width: 767px){
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        @media(max-width: 575px){
+            padding-left: 15px;
+            padding-right: 15px;
+        }
 
         &__title {
             margin-top: 120px;
             color: #1C1F63;
+            @media(max-width: 1199px){
+                margin-top: 50px;
+            }
+            @media(max-width: 991px){
+                margin-top: 28px;
+                line-height: 130%;
+            }
         }
 
         &__text {
             margin-bottom: 30px;
             margin-top: 30px;
+            color: #46487A;
+            @media(max-width: 991px){
+                margin-top: 25px;
+                margin-bottom: 25px;
+            }
+            @media(max-width: 575px){
+                font-size: 14px;
+                line-height: 20px;
+            }
         }
 
         &__image {
@@ -32,6 +66,16 @@
 
         &_img {
             padding: 0;
+            @media(max-width: 767px){
+                position: relative;
+                bottom: 15px;
+                border-radius: 24px;
+            }
+            img {
+                @media(max-width: 767px){
+                    height: auto;
+                }
+            }
         }
     }
 }
@@ -71,6 +115,11 @@
         padding-top: 78px;
         padding-left: 45px;
         padding-bottom: 40px;
+        @media(max-width: 991px){
+            padding-top: 25px;
+            padding-bottom: 25px;
+            padding-left: 25px;
+        }
     }
 
     .advantages-item_dark {
@@ -86,6 +135,9 @@
 
 .examples {
     padding-top: 45px;
+    @media(max-width: 991px){
+        padding-top: 0;
+    }
 
     .page-title {
         max-width: 590px;
@@ -95,6 +147,9 @@
         display: grid;
         column-gap: 10px;
         grid-template-columns: 373px auto;
+        @media(max-width: 991px){
+            grid-template-columns: 1fr;
+        }
     }
 
     .examples-col {
@@ -116,21 +171,42 @@
         display: flex;
         flex-direction: column;
         row-gap: 10px;
+        @media(max-width: 991px){
+            flex-direction: row;
+            column-gap: 10px;
+            margin-bottom: 10px;
+        }
+    
 
         img {
             width: 100%;
+          
         }
 
         a {
+            @media(max-width: 991px){
+                width: 100%;
+            }
             &:nth-child(1) {
                 img {
                     height: 320px;
+                    @media(max-width: 575px){
+                        height: 50vw;
+                    }
+                  
                 }
             }
 
             &:nth-child(2) {
                 img {
                     height: 490px;
+                    @media(max-width: 991px){
+                        height: 320px;
+                       
+                    }
+                    @media(max-width: 575px){
+                        height: 50vw;
+                    }
                 }
             }
         }
@@ -143,6 +219,9 @@
             img {
                 height: 490px;
                 width: 100%;
+                @media(max-width: 575px){
+                    height: 62vw;
+                }
             }
         }
 
@@ -167,6 +246,9 @@
             img {
                 height: 320px;
                 width: 100%;
+                @media(max-width: 575px){
+                    height: 50vw;
+                }
             }
         }
     }

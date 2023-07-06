@@ -17,7 +17,7 @@
 
     @media (max-width: 575px) {
       margin-top: 15px;
-      margin-bottom: 13px;
+      margin-bottom: 22px;
       padding-left: 0;
     }
   }
@@ -28,6 +28,9 @@
 
     &:not(:last-child) {
       padding-right: 16px;
+      @media(max-width: 767px){
+        padding-right: 13px;
+      }
 
       // background: url('@img/icons/slash.svg') no-repeat right center / 5px;
       &::after {
@@ -36,12 +39,19 @@
         right: 0;
         top: 1px;
         font-size: 11px;
+        @media(max-width: 767px){
+          top: -3px;
+        }
       }
 
       a {
         color: #46487A;
         font-weight: 500;
         font-size: 11px;
+
+        &:hover {
+          color: #FD7033;
+        }
       }
     }
 
@@ -50,14 +60,14 @@
         transition: color .2s linear;
 
         &:hover {
-          color: #000;
+          color: #FD7033;
         }
       }
     }
 
     &:last-child {
       @media (max-width: 991px) {
-        padding-right: 10px;
+        padding-right: 9px;
       }
 
       a {
@@ -67,7 +77,7 @@
     }
 
     &:not(:first-child) {
-      padding-left: 9px;
+      padding-left: 8px;
     }
 
     a {
