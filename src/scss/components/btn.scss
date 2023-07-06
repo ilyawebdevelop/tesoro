@@ -172,6 +172,9 @@
 }
 .personal-form__btn_change {
     margin-top: 40px;
+    @media(max-width: 991px){
+        margin-top: 20px;
+    }
 }
 .checkout-total__btn {
     margin-top: 20px;

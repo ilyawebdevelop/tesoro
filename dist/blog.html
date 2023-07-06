@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="img/header/logo.svg">	
+	<link rel="stylesheet" href="css/style.min.css">
+	<title>Блог</title>
+</head>
+
+<body>
+	
+	<div class="wrapper">
+		<!-- Header -->
+<header class="header" id="header">
+  <div class="header-top">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <a class="header-top__link mx-auto" href="#">Бесплатная доставка</a>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /header-top -->
+  <div class="header-bottom header-content">
+    <div class="container">
+      <div class="row header-content__top align-items-center">
+        <div class="col-lg-3 d-none d-lg-block">
+          <div class="d-flex align-items-center gap-3">
+            <a href="/" class="logo"><img src="img/header/logo.svg" alt="logo"></a>
+            <p class="logo-descr">Фабрика носков г. Иркутск</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <form class="header-search mx-auto" action="#">
+            <input type="search" placeholder="Поиск">
+            <button class="d-none d-lg-flex" type="submit"><img src="img/icons/search.svg" alt="icon"></button>
+            <button class="d-flex d-lg-none header-search__btn" type="submit"><img src="img/icons/search-white.svg" alt="icon"></button>
+            <div class="header-form-close d-flex d-lg-none"><img src="img/icons/back.svg" alt="icon"></div>
+          </form><!-- /header-search -->
+        </div>
+        <div class="col-lg-3 text-end d-none d-lg-block">
+          <a class="header-phone" href="tel:88001234567">8 (800) 123-45-67</a>
+        </div>
+      </div>
+
+      <div class="row header-content__bottom align-items-center">
+        <div class="col-lg-2 col-6 d-flex">
+          <button class="header-catalog-btn catalog-btn">
+            <div class="catalog-btn__icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <span>Каталог</span>
+          </button>
+          <!-- Hamburger Menu -->
+          <div class="hamburger" id="toggle">
+            <div class="top-bun"></div>
+            <div class="meat"></div>
+            <div class="bottom-bun"></div>
+          </div><!-- /Hamburger Menu -->
+          <div class="d-flex d-lg-none flex-column align-items-center gap-3">
+            <a href="/" class="logo logo-sm"><img src="img/header/logo-sm.svg" alt="logo"></a>
+          </div>
+        </div>
+        <div class="col-lg-8 header__nav">
+
+          <nav>
+            <ul class="header__nav-list">
+              <li><a href="#">О бренде</a></li>
+              <li class="has-child">
+                <a href="#">Покупателю</a>
+                <ul class="submenu">
+                  <li><a href="#">Меню 1</a></li>
+                  <li><a href="#">Меню 2</a></li>
+                  <li><a href="#">Меню 3 Меню 3 Меню 3</a></li>
+                </ul>
+              </li>
+              <li><a href="#">ОПТ</a></li>
+              <li><a href="#">Индивидуальный дизайн</a></li>
+              <li><a href="#">Блог</a></li>
+            </ul>
+            <div class="btn-close">
+              <svg class="like-icon">
+                <use xlink:href="img/icons/icons.svg#close"></use>
+              </svg>
+            </div>
+            <a class="header-phone d-block d-lg-none" href="tel:88001234567">8 (800) 123-45-67</a>
+
+          </nav>
+        </div>
+        <div class="col-6 col-lg-2">
+          <div class="actions">
+            <ul>
+              <li>
+                <a class="header-heart" href="#" target="_blank" data-count="99">
+                  <svg class="like-icon">
+                    <use xlink:href="img/icons/icons.svg#like"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="header-cart" href="#" target="_blank" data-count="99">
+                  <svg>
+                    <use xlink:href="img/icons/icons.svg#cart"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="d-none d-sm-block">
+                <a href="#" target="_blank">
+                  <svg>
+                    <use xlink:href="img/icons/icons.svg#person"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <button class="mobile-search">
+              <img src="img/icons/search.svg" alt="icon">
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- /header-bottom -->
+</header>
+		<main class="main">			
+			<!-- breadcrumbs -->
+<div class="breadcrumbs">
+    <div class="container">
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__item">
+          <a href="#">Главная</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a href="#">Каталог товаров</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <span>Крем для рук с экстрактом улитки 3W Clinic Snail Hand Cream</span>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+			<!-- blog -->
+<section class="blog-page" id="blog-page">
+    <div class="container">
+        <h2 class="section-title page-title">Блог</h2>
+        <div class="blog-grid">
+
+            <div class="blog-item">
+                <a href="#">
+                    <img class="blog-slide__img" src="img/hits/hit-1.jpg" alt="image">
+                </a>
+                <div class="blog-slide__content mt-3">
+                    <h5><a href="#" class="blog-slide__title mb-3 mb-sm-4 title-dark fw-semibold">Как правильно выбирать качественные
+                            носки? </a>
+                    </h5>
+                    <div class="blog-slide__date slide-date">05.05.2023</div>
+                </div><!-- /blog-slide__content -->
+            </div><!-- /blog-item -->
+
+            <div class="blog-item">
+                <a href="#">
+                    <img class="blog-slide__img" src="img/hits/hit-1.jpg" alt="image">
+                </a>
+                <div class="blog-slide__content mt-3">
+                    <h5><a href="#" class="blog-slide__title mb-3 mb-sm-4 title-dark fw-semibold">Как правильно выбирать качественные
+                            носки? Как правильно выбирать качественные
+                            носки? </a>
+                    </h5>
+                    <div class="blog-slide__date slide-date">05.05.2023</div>
+                </div><!-- /blog-slide__content -->
+            </div><!-- /blog-item -->
+
+            <div class="blog-item">
+                <a href="#">
+                    <img class="blog-slide__img" src="img/hits/hit-1.jpg" alt="image">
+                </a>
+                <div class="blog-slide__content mt-3">
+                    <h5><a href="#" class="blog-slide__title mb-3 mb-sm-4 title-dark fw-semibold">Как правильно выбирать качественные
+                            носки? </a>
+                    </h5>
+                    <div class="blog-slide__date slide-date">05.05.2023</div>
+                </div><!-- /blog-slide__content -->
+            </div><!-- /blog-item -->
+
+            <div class="blog-item">
+                <a href="#">
+                    <img class="blog-slide__img" src="img/hits/hit-1.jpg" alt="image">
+                </a>
+                <div class="blog-slide__content mt-3">
+                    <h5><a href="#" class="blog-slide__title mb-3 mb-sm-4 title-dark fw-semibold">Как правильно выбирать качественные
+                            носки? </a>
+                    </h5>
+                    <div class="blog-slide__date slide-date">05.05.2023</div>
+                </div><!-- /blog-slide__content -->
+            </div><!-- /blog-item -->
+
+        </div>
+        <div class="row">
+            <div class="col">
+                <!-- pagination -->
+<div class="pagination" id="pagination">
+    <a href="#" class="loadmore btn--light btn">Загрузить ещё</a>
+    <ul class="pagination-links d-flex align-items-center">
+        <li class="pag-arrow pag-arrow-none">
+            <a href="#">
+                <svg class="select-reset-icon">
+                    <use xlink:href="img/icons/icons.svg#pag-left"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="first-link active">
+            <a href="#">1</a>
+        </li>
+        <li class="pag-link">
+            <a href="#">2</a>
+        </li>
+        <li class="pag-link">
+            <a href="#">3</a>
+        </li>
+        <li class="pag-link">
+            <a href="#">4</a>
+        </li>
+        <li class="pag-link disabled d-none d-sm-block">
+            <a href="#">5</a>
+        </li>       
+        <li class="pag-arrow">
+            <a href="#">
+                <svg class="select-reset-icon">
+                    <use xlink:href="img/icons/icons.svg#pag-right"></use>
+                </svg>
+            </a>
+        </li>
+    </ul>
+
+
+</div>
+            </div>
+        </div>
+    </div>
+</section>
+			
+		</main>
+		<!-- Footer -->
+<footer class="footer" id="footer">
+    <div class="container">
+        <div class="row footer-top">
+            <div class="col-lg-3 d-flex flex-column justify-content-between">
+                <div class="footer__logo-wrapper">
+                    <div class="d-flex gap-4 gap-lg-0 d-lg-block align-items-center">
+                        <a href="/" class="logo footer__logo mb-0 mb-lg-2"><img src="img/footer/footer-logo.svg"
+                                alt="logo"></a>
+                        <p class="footer__logo-descr">Фабрика носков г. Иркутск</p>
+                    </div>
+                    <p class="fw-semibold mb-3 mt-3 mt-lg-4 footer-quest">Оставьте свой отзыв или задайте нам вопрос</p>
+                    <div class="btn btn--orange footer__btn">Отправить сообщение</div>
+                </div><!-- /footer__logo-wrapper -->
+                <div class="footer-market d-none d-lg-block">
+                    <p class="footer__logo-descr mb-3">Мы на маркетплейсе</p>
+                    <a href="#" class="btn btn--blue">TESORO на OZON</a>
+                </div>
+
+            </div>
+            <div class="col-lg-9">
+                <div class="row footer-top__row">
+                    <div class="col-6 col-xl-4 footer-nav-wrapper-first">
+                        <h5 class="mb-4 title-light">КАТАЛОГ</h5>
+                        <nav class="footer-nav">
+                            <h5 class="footer-nav__title mb-3 title-dark"><a href="#">Мужские</a></h5>
+                            <ul class="footer-nav__list">
+                                <li><a href="#">Классические</a></li>
+                                <li><a href="#">С принтами</a></li>
+                                <li><a href="#">Короткие</a></li>
+                                <li><a href="#">Утепленные</a></li>
+                                <li><a href="#">Большие размеры</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-6 col-xl-4 footer-nav-wrapper footer-nav-wrapper-second">
+                        <nav class="footer-nav">
+                            <h5 class="footer-nav__title mb-3 title-dark"><a href="#">Женские</a></h5>
+                            <ul class="footer-nav__list">
+                                <li><a href="#">Классические</a></li>
+                                <li><a href="#">С принтами</a></li>
+                                <li><a href="#">Короткие</a></li>
+                                <li><a href="#">Утепленные</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-6 col-xl-4 footer-nav-wrapper footer-nav-wrapper-third">
+                        <nav class="footer-nav">
+                            <h5 class="footer-nav__title mb-3 title-dark"><a href="#">Женские</a></h5>
+                            <h5 class="footer-nav__title mb-3 title-dark"><a href="#">Подарочные наборы</a></h5>
+                            <h5 class="footer-nav__title mb-3 title-dark"><a href="#">Новогодние модели</a></h5>
+                        </nav>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 col-xl-4">
+                        <nav class="footer-nav">
+                            <h5 class="mb-4 title-light">ИНФОРМАЦИЯ</h5>
+                            <ul class="footer-nav__list">
+                                <li><a href="#">О бренде</a></li>
+                                <li><a href="#">ОПТ</a></li>
+                                <li><a href="#">Индивидуальный дизайн</a></li>
+                                <li><a href="#">Блог</a></li>
+                                <li><a href="#">Доставка и оплата</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-6 col-xl-4">
+                        <nav class="footer-nav">
+                            <h5 class="mb-4 title-light">КОНТАКТЫ</h5>
+                            <ul class="footer-nav__list">
+                                <li><a class="title-dark fw-semibold footer-phone" href="tel:88001234567">8 914 922
+                                        2500</a></li>
+                                <li><a href="mailto:sock.irk@outlook.com">sock.irk@outlook.com</a></li>
+                            </ul>
+                            <a class="footer-place d-block d-lg-none" href="#">г. Иркутск, ул. Марии Ульяновой, 13а, 4
+                                этаж</a>
+                            <div class="socials footer-socials mt-2 d-block d-lg-none">
+                                <ul class="footer-socials__list">
+                                    <li>
+                                        <a href="#">
+                                            <svg class="footer-socials_telegram">
+                                                <use xlink:href="img/icons/icons.svg#telegram"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <svg class="footer-socials_whatsapp">
+                                                <use xlink:href="img/icons/icons.svg#whatsapp"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <svg class="footer-socials_insta">
+                                                <use xlink:href="img/icons/icons.svg#instagram"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="col-12 d-block d-lg-none">
+                        <p class="contacts-descr">
+                            * проект Meta Platforms Inc., деятельность которой в России запрещена
+                        </p>
+                    </div>
+                    <div class="col-12 mt-4 footer-market d-block d-lg-none">
+                        <p class="footer__logo-descr footer__logo-descr_full mb-3">Мы на маркетплейсе</p>
+                        <a href="#" class="btn btn--blue">TESORO на OZON</a>
+                    </div>
+
+
+                    <div class="col-lg-4 pt-5 d-none d-lg-block">
+                        <a class="footer-place" href="#">г. Иркутск, ул. Марии Ульяновой, 13а, 4 этаж</a>
+                        <div class="socials footer-socials mt-2">
+                            <ul class="footer-socials__list">
+                                <li>
+                                    <a href="#">
+                                        <svg class="footer-socials_telegram">
+                                            <use xlink:href="img/icons/icons.svg#telegram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <svg class="footer-socials_whatsapp">
+                                            <use xlink:href="img/icons/icons.svg#whatsapp"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <svg class="footer-socials_insta">
+                                            <use xlink:href="img/icons/icons.svg#instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <p class="contacts-descr">* проект Meta Platforms Inc., деятельность которой в России запрещена
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+
+            </div>
+            <div class="col-lg-3"></div>
+            <div class="col-lg-3"></div>
+        </div>
+        <div class="row footer-bottom">
+            <div class="col-lg-3">
+                <a class="copyright" href="#">© 2023 Фабрика носков TESORO.<br> Все права защищены.</a>
+            </div>
+            <div class="col-lg-6">
+                <div class="d-flex footer-bottom-nav">
+                    <a href="#">Политика обработки персональных данных</a>
+                    <a href="#">Оферта</a>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <a class="develop" href="#">Разработка сайта — Вангер.рф</a>
+                <a class="design" href="#">Дизайн сайта — Sannikova N. </a>
+            </div>
+        </div>
+    </div>
+</footer>
+		<!-- modal -->
+<!-- event -->
+<div class="modal fade modal-event" id="modal-event" tabindex="-1" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+    </div>
+  </div>
+</div>
+	</div>
+	
+	<script src="js/app.min.js"></script>
+	
+</body>
+
+</html>
+
+
+
+

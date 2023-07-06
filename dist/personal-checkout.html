@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="img/header/logo.svg">	
+	<link rel="stylesheet" href="css/style.min.css">
+	<title>Оформление заказа</title>
+</head>
+
+<body>
+	
+	<div class="wrapper">
+		<!-- Header -->
+<header class="header" id="header">
+  <div class="header-top">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <a class="header-top__link mx-auto" href="#">Бесплатная доставка</a>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /header-top -->
+  <div class="header-bottom header-content">
+    <div class="container">
+      <div class="row header-content__top align-items-center">
+        <div class="col-lg-3 d-none d-lg-block">
+          <div class="d-flex align-items-center gap-3">
+            <a href="/" class="logo"><img src="img/header/logo.svg" alt="logo"></a>
+            <p class="logo-descr">Фабрика носков г. Иркутск</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <form class="header-search mx-auto" action="#">
+            <input type="search" placeholder="Поиск">
+            <button class="d-none d-lg-flex" type="submit"><img src="img/icons/search.svg" alt="icon"></button>
+            <button class="d-flex d-lg-none header-search__btn" type="submit"><img src="img/icons/search-white.svg" alt="icon"></button>
+            <div class="header-form-close d-flex d-lg-none"><img src="img/icons/back.svg" alt="icon"></div>
+          </form><!-- /header-search -->
+        </div>
+        <div class="col-lg-3 text-end d-none d-lg-block">
+          <a class="header-phone" href="tel:88001234567">8 (800) 123-45-67</a>
+        </div>
+      </div>
+
+      <div class="row header-content__bottom align-items-center">
+        <div class="col-lg-2 col-6 d-flex">
+          <button class="header-catalog-btn catalog-btn">
+            <div class="catalog-btn__icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <span>Каталог</span>
+          </button>
+          <!-- Hamburger Menu -->
+          <div class="hamburger" id="toggle">
+            <div class="top-bun"></div>
+            <div class="meat"></div>
+            <div class="bottom-bun"></div>
+          </div><!-- /Hamburger Menu -->
+          <div class="d-flex d-lg-none flex-column align-items-center gap-3">
+            <a href="/" class="logo logo-sm"><img src="img/header/logo-sm.svg" alt="logo"></a>
+          </div>
+        </div>
+        <div class="col-lg-8 header__nav">
+
+          <nav>
+            <ul class="header__nav-list">
+              <li><a href="#">О бренде</a></li>
+              <li class="has-child">
+                <a href="#">Покупателю</a>
+                <ul class="submenu">
+                  <li><a href="#">Меню 1</a></li>
+                  <li><a href="#">Меню 2</a></li>
+                  <li><a href="#">Меню 3 Меню 3 Меню 3</a></li>
+                </ul>
+              </li>
+              <li><a href="#">ОПТ</a></li>
+              <li><a href="#">Индивидуальный дизайн</a></li>
+              <li><a href="#">Блог</a></li>
+            </ul>
+            <div class="btn-close">
+              <svg class="like-icon">
+                <use xlink:href="img/icons/icons.svg#close"></use>
+              </svg>
+            </div>
+            <a class="header-phone d-block d-lg-none" href="tel:88001234567">8 (800) 123-45-67</a>
+
+          </nav>
+        </div>
+        <div class="col-6 col-lg-2">
+          <div class="actions">
+            <ul>
+              <li>
+                <a class="header-heart" href="#" target="_blank" data-count="99">
+                  <svg class="like-icon">
+                    <use xlink:href="img/icons/icons.svg#like"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="header-cart" href="#" target="_blank" data-count="99">
+                  <svg>
+                    <use xlink:href="img/icons/icons.svg#cart"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="d-none d-sm-block">
+                <a href="#" target="_blank">
+                  <svg>
+                    <use xlink:href="img/icons/icons.svg#person"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <button class="mobile-search">
+              <img src="img/icons/search.svg" alt="icon">
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- /header-bottom -->
+</header>
+		<main class="main">			
+			<!-- breadcrumbs -->
+<div class="breadcrumbs">
+    <div class="container">
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__item">
+          <a href="#">Главная</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a href="#">Каталог товаров</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <span>Крем для рук с экстрактом улитки 3W Clinic Snail Hand Cream</span>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+			<!-- checkout -->
+<section class="checkout" id="checkout">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2 class="page-title title-dark">Оформление заказа</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-9 col-xl-8">
+                <h4 class="checkout-title">Корзина</h4>
+                <div class="cart-table">
+                    <div class="cart-head">
+                        <div class="cart-head__col">Фото</div>
+                        <div class="cart-head__col">Название</div>
+                        <div class="cart-head__col">Кол-во</div>
+                        <div class="cart-head__col">Цена</div>
+                        <div class="cart-head__col">Сумма</div>
+                        <div class="cart-head__col"></div>
+                    </div>
+                    <div class="cart-body">
+
+                        <div class="cart-body__row cart-item">
+                            <div class="cart-body__col">
+                                <img class="cart-item__image" src="img/cart/cart.jpeg" alt="image">
+                            </div>
+                            <div class="cart-body__col">
+                                <h5 class="mb-2">Носки мужские классические</h5>
+                                <div class="variations-cart-wrapper">
+                                    <div class="cart-item__variations variations-cart">
+                                        <span>Цвет: </span>
+                                        <span>Черный</span>
+                                    </div>
+                                    <div class="cart-item__variations variations-cart">
+                                        <span>Размер: </span>
+                                        <span>42</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="cart-body__col">
+                                <div class="product-actions__quantity d-flex gap-1">
+                                    <button class="quantity__btn _minus" type="button"
+                                        onclick="this.nextElementSibling.querySelector('input').stepDown();">
+                                        <svg>
+                                            <use xlink:href="img/icons/icons.svg#minus"></use>
+                                        </svg>
+                                    </button>
+                                    <div class="quantity__field qty">
+                                        <input type="number" value="10" min="1" v inputmode="numeric"
+                                            autocomplete="off">
+                                    </div>
+                                    <button class="quantity__btn _plus" type="button"
+                                        onclick="this.previousElementSibling.querySelector('input').stepUp();">
+                                        <svg>
+                                            <use xlink:href="img/icons/icons.svg#plus"></use>
+                                        </svg>
+                                    </button>
+                                </div><!-- /product-actions__quantity -->
+                            </div>
+                            <div class="cart-body__col cart-item__price">240 р.</div>
+                            <div class="cart-body__col cart-item__price_total">2 400 р.</div>
+                            <div class="cart-body__col">
+                                <button class="cart-item__close">
+                                    <svg>
+                                        <use xlink:href="img/icons/icons.svg#close"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="cart-body__row cart-item">
+                            <div class="cart-body__col">
+                                <img class="cart-item__image" src="img/cart/cart.jpeg" alt="image">
+                            </div>
+                            <div class="cart-body__col">
+                                <h5 class="mb-2">Носки мужские классические Носки мужские</h5>
+                                <div class="variations-cart-wrapper">
+                                    <div class="cart-item__variations variations-cart">
+                                        <span>Цвет: </span>
+                                        <span>Черный</span>
+                                    </div>
+                                    <div class="cart-item__variations variations-cart">
+                                        <span>Размер: </span>
+                                        <span>42</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="cart-body__col">
+                                <div class="product-actions__quantity d-flex gap-1">
+                                    <button class="quantity__btn _minus" type="button"
+                                        onclick="this.nextElementSibling.querySelector('input').stepDown();">
+                                        <svg>
+                                            <use xlink:href="img/icons/icons.svg#minus"></use>
+                                        </svg>
+                                    </button>
+                                    <div class="quantity__field qty">
+                                        <input type="number" value="10" min="1" v inputmode="numeric"
+                                            autocomplete="off">
+                                    </div>
+                                    <button class="quantity__btn _plus" type="button"
+                                        onclick="this.previousElementSibling.querySelector('input').stepUp();">
+                                        <svg>
+                                            <use xlink:href="img/icons/icons.svg#plus"></use>
+                                        </svg>
+                                    </button>
+                                </div><!-- /product-actions__quantity -->
+                            </div>
+                            <div class="cart-body__col cart-item__price">240 р.</div>
+                            <div class="cart-body__col cart-item__price_total">2 400 р.</div>
+                            <div class="cart-body__col">
+                                <button class="cart-item__close">
+                                    <svg>
+                                        <use xlink:href="img/icons/icons.svg#close"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="cart-body__row cart-item">
+                            <div class="cart-body__col">
+                                <img class="cart-item__image" src="img/cart/cart.jpeg" alt="image">
+                            </div>
+                            <div class="cart-body__col">
+                                <h5 class="mb-2">Носки мужские классические Носки мужские</h5>
+                                <div class="variations-cart-wrapper">
+                                    <div class="cart-item__variations variations-cart">
+                                        <span>Цвет: </span>
+                                        <span>Черный</span>
+                                    </div>
+                                    <div class="cart-item__variations variations-cart">
+                                        <span>Размер: </span>
+                                        <span>42</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="cart-body__col">
+                                <div class="product-actions__quantity d-flex gap-1">
+                                    <button class="quantity__btn _minus" type="button"
+                                        onclick="this.nextElementSibling.querySelector('input').stepDown();">
+                                        <svg>
+                                            <use xlink:href="img/icons/icons.svg#minus"></use>
+                                        </svg>
+                                    </button>
+                                    <div class="quantity__field qty">
+                                        <input type="number" value="10" min="1" v inputmode="numeric"
+                                            autocomplete="off">
+                                    </div>
+                                    <button class="quantity__btn _plus" type="button"
+                                        onclick="this.previousElementSibling.querySelector('input').stepUp();">
+                                        <svg>
+                                            <use xlink:href="img/icons/icons.svg#plus"></use>
+                                        </svg>
+                                    </button>
+                                </div><!-- /product-actions__quantity -->
+                            </div>
+                            <div class="cart-body__col cart-item__price">240 р.</div>
+                            <div class="cart-body__col cart-item__price_total">2 400 р.</div>
+                            <div class="cart-body__col">
+                                <button class="cart-item__close">
+                                    <svg>
+                                        <use xlink:href="img/icons/icons.svg#close"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div><!-- /cart-table -->
+                <h4 class="checkout-title">Контактные данные</h4>
+                <form action="#" class="personal-form">
+                    <div class="personal-form__grid">
+                        <div class="personal-form__col">
+                            <input type="text" class="personal-form__input" placeholder="Ваше имя">
+                        </div>
+                        <div class="personal-form__col">
+                            <input type="tel" class="personal-form__input" placeholder="Телефон*">
+                        </div>
+                        <div class="personal-form__col">
+                            <input type="text" class="personal-form__input" placeholder="Фамилия">
+                        </div>
+                        <div class="personal-form__col">
+                            <input type="email" class="personal-form__input" placeholder="Почта">
+                        </div>
+                    </div>
+                </form>
+                <h4 class="checkout-title mt-4">Доставка</h4>
+                <div class="checkbox-grid checkbox-grid_del">
+
+                    <div class="checkbox-item">
+                        <input id="delivery-1" type="radio" name="delivery" checked>
+                        <label for="delivery-1">
+                            <svg>
+                                <use xlink:href="img/icons/icons.svg#del-1"></use>
+                            </svg>
+                            <div class="checkbox-item__address">
+                                <h5>Самовывоз</h5>
+                                <p>ул. Марии Ульяновой, 13а, 4 этаж</p>
+                            </div>
+                            <div class="checkbox-item__price">Бесплатно</div>
+                        </label>
+                    </div><!-- /checkbox-item -->
+
+                    <div class="checkbox-item">
+                        <input id="delivery-2" type="radio" name="delivery">
+                        <label for="delivery-2">
+                            <svg>
+                                <use xlink:href="img/icons/icons.svg#del-2"></use>
+                            </svg>
+                            <h5>Доставка курьером по Иркутску</h5>
+
+                            <div class="checkbox-item__price">200 руб.</div>
+                        </label>
+                    </div><!-- /checkbox-item -->
+                    <div class="checkbox-item">
+                        <input id="delivery-3" type="radio" name="delivery">
+                        <label for="delivery-3">
+                            <svg>
+                                <use xlink:href="img/icons/icons.svg#del-3"></use>
+                            </svg>
+                            <h5>Доставка Почтой России</h5>
+
+                        </label>
+                    </div><!-- /checkbox-item -->
+                    <div class="checkbox-item">
+                        <input id="delivery-4" type="radio" name="delivery">
+                        <label for="delivery-4">
+                            <svg>
+                                <use xlink:href="img/icons/icons.svg#del-4"></use>
+                            </svg>
+                            <h5>Доставка транспортной компанией</h5>
+
+                        </label>
+                    </div><!-- /checkbox-item -->
+
+                </div>
+
+                <div class="personal-form__col personal-form__col_address">
+                    <input type="text" class="personal-form__input" placeholder="Адрес доставки">
+                </div>
+
+                <h4 class="checkout-title mt-4">Оплата</h4>
+                <div class="checkbox-grid checkbox-grid_pay">
+
+                    <div class="checkbox-item">
+                        <input id="payment-1" type="radio" name="payment" checked>
+                        <label for="payment-1">
+                            <svg>
+                                <use xlink:href="img/icons/icons.svg#pay-1"></use>
+                            </svg>
+                            <h5>Онлайн оплата картой</h5>
+                        </label>
+                    </div><!-- /checkbox-item -->
+
+                    <div class="checkbox-item">
+                        <input id="payment-2" type="radio" name="payment">
+                        <label for="payment-2">
+                            <svg>
+                                <use xlink:href="img/icons/icons.svg#pay-2"></use>
+                            </svg>
+                            <h5 class="title-dark">QR-код</h5>
+                        </label>
+                    </div><!-- /checkbox-item -->
+                    <div class="checkbox-item">
+                        <input id="payment-3" type="radio" name="payment">
+                        <label for="payment-3">
+                            <svg>
+                                <use xlink:href="img/icons/icons.svg#pay-3"></use>
+                            </svg>
+                            <h5>Наличными при получении</h5>
+
+                        </label>
+                    </div><!-- /checkbox-item -->
+
+                </div>
+
+            </div>
+            <div class="col-lg-1 d-none d-xl-block">
+
+            </div>
+            <div class="col-lg-3">
+                <div class="checkout-total">
+                    <h4 class="checkout-total__title">
+                        Итого:
+                    </h4>
+                    <div class="checkout-total__content total-content">
+                        <div class="total-content__item">
+                            <span>Сумма:</span>
+                            <span>7 200 р.</span>
+                        </div>
+                        <div class="total-content__item">
+                            <span>Доставка:</span>
+                            <span>0 р.</span>
+                        </div>
+                    </div>
+                    <div class="checkout-total__sum d-flex justify-content-between align-items-center">
+                        <span>К оплате:</span>
+                        <span class="checkout-total__price">7 200 р.</span>
+                    </div>
+                    <button class="checkout-total__btn btn btn--orange">Оформить заказ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+			
+		</main>
+		<!-- Footer -->
+<footer class="footer" id="footer">
+    <div class="container">
+        <div class="row footer-top">
+            <div class="col-lg-3 d-flex flex-column justify-content-between">
+                <div class="footer__logo-wrapper">
+                    <div class="d-flex gap-4 gap-lg-0 d-lg-block align-items-center">
+                        <a href="/" class="logo footer__logo mb-0 mb-lg-2"><img src="img/footer/footer-logo.svg"
+                                alt="logo"></a>
+                        <p class="footer__logo-descr">Фабрика носков г. Иркутск</p>
+                    </div>
+                    <p class="fw-semibold mb-3 mt-3 mt-lg-4 footer-quest">Оставьте свой отзыв или задайте нам вопрос</p>
+                    <div class="btn btn--orange footer__btn">Отправить сообщение</div>
+                </div><!-- /footer__logo-wrapper -->
+                <div class="footer-market d-none d-lg-block">
+                    <p class="footer__logo-descr mb-3">Мы на маркетплейсе</p>
+                    <a href="#" class="btn btn--blue">TESORO на OZON</a>
+                </div>
+
+            </div>
+            <div class="col-lg-9">
+                <div class="row footer-top__row">
+                    <div class="col-6 col-xl-4 footer-nav-wrapper-first">
+                        <h5 class="mb-4 title-light">КАТАЛОГ</h5>
+                        <nav class="footer-nav">
+                            <h5 class="footer-nav__title mb-3 title-dark"><a href="#">Мужские</a></h5>
+                            <ul class="footer-nav__list">
+                                <li><a href="#">Классические</a></li>
+                                <li><a href="#">С принтами</a></li>
+                                <li><a href="#">Короткие</a></li>
+                                <li><a href="#">Утепленные</a></li>
+                                <li><a href="#">Большие размеры</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-6 col-xl-4 footer-nav-wrapper footer-nav-wrapper-second">
+                        <nav class="footer-nav">
+                            <h5 class="footer-nav__title mb-3 title-dark"><a href="#">Женские</a></h5>
+                            <ul class="footer-nav__list">
+                                <li><a href="#">Классические</a></li>
+                                <li><a href="#">С принтами</a></li>
+                                <li><a href="#">Короткие</a></li>
+                                <li><a href="#">Утепленные</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-6 col-xl-4 footer-nav-wrapper footer-nav-wrapper-third">
+                        <nav class="footer-nav">
+                            <h5 class="footer-nav__title mb-3 title-dark"><a href="#">Женские</a></h5>
+                            <h5 class="footer-nav__title mb-3 title-dark"><a href="#">Подарочные наборы</a></h5>
+                            <h5 class="footer-nav__title mb-3 title-dark"><a href="#">Новогодние модели</a></h5>
+                        </nav>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 col-xl-4">
+                        <nav class="footer-nav">
+                            <h5 class="mb-4 title-light">ИНФОРМАЦИЯ</h5>
+                            <ul class="footer-nav__list">
+                                <li><a href="#">О бренде</a></li>
+                                <li><a href="#">ОПТ</a></li>
+                                <li><a href="#">Индивидуальный дизайн</a></li>
+                                <li><a href="#">Блог</a></li>
+                                <li><a href="#">Доставка и оплата</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-6 col-xl-4">
+                        <nav class="footer-nav">
+                            <h5 class="mb-4 title-light">КОНТАКТЫ</h5>
+                            <ul class="footer-nav__list">
+                                <li><a class="title-dark fw-semibold footer-phone" href="tel:88001234567">8 914 922
+                                        2500</a></li>
+                                <li><a href="mailto:sock.irk@outlook.com">sock.irk@outlook.com</a></li>
+                            </ul>
+                            <a class="footer-place d-block d-lg-none" href="#">г. Иркутск, ул. Марии Ульяновой, 13а, 4
+                                этаж</a>
+                            <div class="socials footer-socials mt-2 d-block d-lg-none">
+                                <ul class="footer-socials__list">
+                                    <li>
+                                        <a href="#">
+                                            <svg class="footer-socials_telegram">
+                                                <use xlink:href="img/icons/icons.svg#telegram"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <svg class="footer-socials_whatsapp">
+                                                <use xlink:href="img/icons/icons.svg#whatsapp"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <svg class="footer-socials_insta">
+                                                <use xlink:href="img/icons/icons.svg#instagram"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="col-12 d-block d-lg-none">
+                        <p class="contacts-descr">
+                            * проект Meta Platforms Inc., деятельность которой в России запрещена
+                        </p>
+                    </div>
+                    <div class="col-12 mt-4 footer-market d-block d-lg-none">
+                        <p class="footer__logo-descr footer__logo-descr_full mb-3">Мы на маркетплейсе</p>
+                        <a href="#" class="btn btn--blue">TESORO на OZON</a>
+                    </div>
+
+
+                    <div class="col-lg-4 pt-5 d-none d-lg-block">
+                        <a class="footer-place" href="#">г. Иркутск, ул. Марии Ульяновой, 13а, 4 этаж</a>
+                        <div class="socials footer-socials mt-2">
+                            <ul class="footer-socials__list">
+                                <li>
+                                    <a href="#">
+                                        <svg class="footer-socials_telegram">
+                                            <use xlink:href="img/icons/icons.svg#telegram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <svg class="footer-socials_whatsapp">
+                                            <use xlink:href="img/icons/icons.svg#whatsapp"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <svg class="footer-socials_insta">
+                                            <use xlink:href="img/icons/icons.svg#instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <p class="contacts-descr">* проект Meta Platforms Inc., деятельность которой в России запрещена
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+
+            </div>
+            <div class="col-lg-3"></div>
+            <div class="col-lg-3"></div>
+        </div>
+        <div class="row footer-bottom">
+            <div class="col-lg-3">
+                <a class="copyright" href="#">© 2023 Фабрика носков TESORO.<br> Все права защищены.</a>
+            </div>
+            <div class="col-lg-6">
+                <div class="d-flex footer-bottom-nav">
+                    <a href="#">Политика обработки персональных данных</a>
+                    <a href="#">Оферта</a>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <a class="develop" href="#">Разработка сайта — Вангер.рф</a>
+                <a class="design" href="#">Дизайн сайта — Sannikova N. </a>
+            </div>
+        </div>
+    </div>
+</footer>
+		<!-- modal -->
+<!-- event -->
+<div class="modal fade modal-event" id="modal-event" tabindex="-1" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+    </div>
+  </div>
+</div>
+	</div>
+	
+	<script src="js/app.min.js"></script>
+	
+</body>
+
+</html>
+
+
+
+
