@@ -76,3 +76,48 @@
         background-size: 379px;
     }
 }
+.brand-intro {
+    background-color: #D9DADC;
+    background-size: 704px;
+    background-repeat: no-repeat;
+    background-position: right;
+    position: relative;
+    @media(max-width: 1199px){
+        background-image: none!important;
+    }
+    @media(max-width: 991px){
+        padding-bottom: 0;
+    }
+    .intro-image {
+        display: none;
+        @media(max-width: 1199px){
+            // display: block;
+        }
+    }
+    .intro__title {
+        max-width: 700px;
+        z-index: 1;
+        position: relative;
+    }
+    .breadcrumbs__list {
+        padding-top: 40px;
+        margin-top: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+    .intro__text {
+        margin-bottom: 40px;
+        max-width: 448px;
+    }
+    .intro-left {
+        padding-top: 120px;
+        padding-bottom: 110px;
+    }
+    .intro-image img {
+        left: -261px;
+        top: -27px;
+        transform: scale(1.1);
+    }
+}
+

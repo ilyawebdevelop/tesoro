@@ -1,0 +1,36 @@
+// cert
+.cert {
+    background: #F2F5F8;
+    padding-top: 80px;
+    @media(max-width: 991px){
+        padding-top: 60px;
+    }
+    &-slider {
+        @media(max-width: 767px){
+            padding-right: 75px;
+            overflow: visible;
+        }
+    }
+    &-slide {
+        &:hover {
+            .cert-slide__title{
+                color: #FD7033;
+            }
+        }
+        &__title {
+            color: #46487A;
+            line-height: 140%;
+            transition: color .2s linear;       
+            @media(max-width: 991px){
+                font-size: 14px;
+            }  
+        }
+        img {
+            height: 393px;
+            margin-bottom: 8px;
+            @media(max-width: 575px){
+                height: auto;
+            }
+        }
+    }
+}

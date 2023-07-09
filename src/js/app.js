@@ -91,7 +91,7 @@ document.querySelectorAll('.product-sect').forEach(n => {
   const mySwiperProduct = new Swiper(n.querySelector('.product-slider'), {
     slidesPerView: 4,
     spaceBetween: 10,
-    speed: 600,   
+    speed: 600,
     allowTouchMove: true,
     navigation: {
       prevEl: n.querySelector('.nav-arrow-left'),
@@ -131,16 +131,16 @@ var mySwiperQuality = new Swiper(qualitySlider, {
   watchSlidesVisibility: true,
   runCallbacksOnInit: true,
   breakpoints: {
-    0: {    
+    0: {
       spaceBetween: 8,
     },
-    576:{
+    576: {
       slidesPerView: 2,
     },
-    992: {     
+    992: {
       spaceBetween: 10,
       slidesPerView: 1,
-    },  
+    },
   },
 });
 
@@ -164,7 +164,7 @@ const reviewsSlider = document.querySelector('.reviews-slider');
 var mySwiperReviews = new Swiper(reviewsSlider, {
   slidesPerView: 3,
   spaceBetween: 10,
-  speed: 600, 
+  speed: 600,
   allowTouchMove: true,
   navigation: {
     nextEl: '.reviews .nav-arrow-right',
@@ -174,7 +174,7 @@ var mySwiperReviews = new Swiper(reviewsSlider, {
     0: {
       slidesPerView: 1,
       spaceBetween: 8,
-    },   
+    },
     576: {
       slidesPerView: 2,
     },
@@ -189,7 +189,7 @@ const blogSlider = document.querySelector('.blog-slider');
 var mySwiperBlogs = new Swiper(blogSlider, {
   slidesPerView: 3,
   spaceBetween: 10,
-  speed: 600, 
+  speed: 600,
   allowTouchMove: true,
   navigation: {
     nextEl: '.blog .nav-arrow-right',
@@ -199,7 +199,7 @@ var mySwiperBlogs = new Swiper(blogSlider, {
     0: {
       slidesPerView: 1,
       spaceBetween: 8,
-    },   
+    },
     576: {
       slidesPerView: 2,
     },
@@ -242,10 +242,10 @@ var mySwiperProducts = new Swiper(productSlider, {
         0: {
           slidesPerView: 5,
           spaceBetween: 4,
-        },   
+        },
         576: {
           slidesPerView: 'auto',
-        },      
+        },
       },
     }
   },
@@ -312,3 +312,58 @@ mySwiperPropose.on('slideChange', function () {
   change_propose();
 });
 
+// steps-slider
+const stepsSlider = document.querySelector('.steps-slider');
+var mySwiperSteps = new Swiper(stepsSlider, {
+  slidesPerView: 3,
+  spaceBetween: 10,
+  speed: 600,
+  allowTouchMove: true,
+  navigation: {
+    nextEl: '.steps-slider-sect .nav-arrow-right',
+    prevEl: '.steps-slider-sect .nav-arrow-left',
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 8,
+    },
+    576: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+  },
+});
+
+// cert-slider
+const certSlider = document.querySelector('.cert-slider');
+var mySwiperCert = new Swiper(certSlider, {
+  slidesPerView: 4,
+  spaceBetween: 10,
+  speed: 600,
+  allowTouchMove: true,
+  navigation: {
+    nextEl: '.cert .nav-arrow-right',
+    prevEl: '.cert .nav-arrow-left',
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 2,
+      spaceBetween: 8,
+    },
+    576: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+    1200: {
+      slidesPerView: 4,
+    },
+  },
+});

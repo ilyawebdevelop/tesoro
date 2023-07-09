@@ -1,0 +1,26 @@
+// orange 
+.orange-image {
+    height: 650px;
+    object-fit: cover;
+    border-radius: 20px;
+    @media(max-width: 991px){
+        height: auto;
+    }
+}
+.orange__descr{
+    color: rgba(255, 255, 255, 0.90);
+    line-height: 140%;
+
+    &:not(:last-child){
+        margin-bottom: 48px;
+    }
+}
+.orange-content {
+    max-width: 450px;
+    h2 {
+        margin-bottom: 40px;
+    }
+    .btn {
+        margin-top: 25px;
+    }
+}
