@@ -260,6 +260,15 @@ var mySwiperExclusive = new Swiper(exclusiveSlider, {
     nextEl: '.exclusive .nav-arrow-right',
     prevEl: '.exclusive .nav-arrow-left',
   },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 8,
+    },
+    576: {
+      slidesPerView: 2,
+    },
+  },
   watchSlidesProgress: true,
   watchSlidesVisibility: true,
   runCallbacksOnInit: true,
@@ -285,12 +294,7 @@ const proposeSlider = document.querySelector('.propose-slider');
 var mySwiperPropose = new Swiper(proposeSlider, {
   slidesPerView: 1,
   spaceBetween: 10,
-  // loop: true,
   speed: 600,
-  effect: 'fade',
-  fadeEffect: {
-    crossFade: true
-  },
   navigation: {
     nextEl: '.propose .nav-arrow-right',
     prevEl: '.propose .nav-arrow-left',
@@ -350,7 +354,7 @@ var mySwiperCert = new Swiper(certSlider, {
   },
   breakpoints: {
     0: {
-      slidesPerView: 2,
+      slidesPerView: 1,
       spaceBetween: 8,
     },
     576: {

@@ -1,11 +1,32 @@
 // propose
 .propose {
+    &-slider {
+        @media(max-width: 575px){
+            padding-left: 10px;
+            padding-right: 75px;
+            overflow: visible;
+        }
+    }
+    .container {
+        @media(max-width: 575px){
+            padding-right: 0;
+            padding-left: 0;
+        }
+    }
     &-grid {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         column-gap: 10px;
+
         @media(max-width: 991px){
             row-gap: 10px;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        @media(max-width: 575px){
+            background-color: #F5F5F5;
+            padding-bottom: 30px;
+            border-radius: 20px;
         }
     }
 
@@ -16,12 +37,20 @@
         }
 
         img {
-            height: 620px;
+            // height: 620px;
+            max-height: 620px;
+            height: auto;
             width: 100%;
             object-fit: cover;
             border-radius: 20px;
-            @media(max-width: 767px){
+            @media(max-width: 1199px){
+                max-height: unset;
+            }
+            @media(max-width: 991px){
                 height: 70vw;
+            }
+            @media(max-width: 767px){
+                height: 85vw;
             }
         }
     }

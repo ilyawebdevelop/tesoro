@@ -82,7 +82,9 @@
 
 .individual-intro {
     background-color: #ECECEC;
-
+    @media(max-width: 991px){
+        background-color: #F2F5F8;
+    }
     .intro__title {
         max-width: 100%;
         position: relative;
@@ -92,12 +94,15 @@
     .intro-image img {
         left: -261px;
         top: -27px;
-        transform: scale(1.1);
+        // transform: scale(1.1);
     }
 
     .breadcrumbs__list {
         padding-top: 17px;
         margin-top: 0;
+        @media(max-width: 575px){
+            display: none;
+        }
     }
 
     .intro-left {
@@ -107,6 +112,9 @@
     .intro__text {
         max-width: 480px;
         margin-bottom: 40px;
+        @media(max-width: 575px){
+            margin-bottom: 25px;
+        }
     }
 }
 

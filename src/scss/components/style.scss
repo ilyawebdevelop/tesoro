@@ -16,6 +16,7 @@
         row-gap: 10px;
         @media(max-width: 991px){
             grid-template-rows: unset;
+            row-gap: 24px;
         }
     }
     &-item {
@@ -40,12 +41,12 @@
             font-weight: 500;
             line-height: 130%;
             text-transform: uppercase;
-            color: #1C1F63;
-            font-weight: 22px;
+            color: #1C1F63;         
             font-size: 22px;
             max-width: 245px;
             @media(max-width: 991px){
                 font-size: 14px;
+                margin-bottom: 50px;
             }
         }
         &__descr {
@@ -53,6 +54,7 @@
             color: #46487A;
             @media(max-width: 991px){
                 font-size: 14px;
+                font-weight: 500;
             }
         }
     }
@@ -66,6 +68,9 @@
 }
 .style-item-img{
     @media(max-width: 991px){
-        height: 210px;
+        height: 310px;
+    }
+    @media(max-width: 575px){
+        height: 80vw;
     }
 }

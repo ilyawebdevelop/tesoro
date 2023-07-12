@@ -10,6 +10,9 @@
     }
     .breadcrumbs__list {
         position: absolute;
+        @media(max-width: 575px){
+            display: none;
+        }
     }
     .container {
         position: relative;
@@ -17,6 +20,10 @@
     .intro-left {
         padding-top: 117px;
         padding-bottom: 100px;
+        @media(max-width: 575px){
+            padding-bottom: 25px;
+            padding-top: 35px;
+        }
     }
     .intro__title {
         max-width: 910px;
@@ -24,5 +31,8 @@
     .intro__text {
         max-width: 490px;
         margin-bottom: 40px;
+        @media(max-width: 575px){
+            margin-bottom: 22px;
+        }
     }
 }
