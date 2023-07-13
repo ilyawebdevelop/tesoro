@@ -23,7 +23,8 @@
           <form class="header-search mx-auto" action="#">
             <input type="search" placeholder="Поиск">
             <button class="d-none d-lg-flex" type="submit"><img src="@img/icons/search.svg" alt="icon"></button>
-            <button class="d-flex d-lg-none header-search__btn" type="submit"><img src="@img/icons/search-white.svg" alt="icon"></button>
+            <button class="d-flex d-lg-none header-search__btn" type="submit"><img src="@img/icons/search-white.svg"
+                alt="icon"></button>
             <div class="header-form-close d-flex d-lg-none"><img src="img/icons/back.svg" alt="icon"></div>
           </form><!-- /header-search -->
         </div>
@@ -55,6 +56,22 @@
         <div class="col-lg-8 header__nav">
 
           <nav>
+            <div class="mobile-head d-flex d-lg-none">
+              <div class="mobile-header-wrap">
+                <div class="btn-close">
+                  <svg>
+                    <use xlink:href="img/icons/icons.svg#close"></use>
+                  </svg>
+                </div>
+                <a class="mobile-personal">
+                  <span>Вход/Регистрация</span>
+                  <svg>
+                    <use xlink:href="img/icons/icons.svg#person"></use>
+                  </svg>
+                </a>
+              </div>
+
+            </div>
             <ul class="header__nav-list">
               <li><a href="#">О бренде</a></li>
               <li class="has-child">
@@ -69,12 +86,20 @@
               <li><a href="#">Индивидуальный дизайн</a></li>
               <li><a href="#">Блог</a></li>
             </ul>
-            <div class="btn-close">
-              <svg class="like-icon">
-                <use xlink:href="img/icons/icons.svg#close"></use>
-              </svg>
+
+            <div class="contacts-sm d-block d-lg-none">
+              <div class="contacts-content">
+                <h5>КОНТАКТЫ</h5>
+                <a class="header-phone d-block d-lg-none" href="tel:88001234567">8 (800) 123-45-67</a>
+                <a href="mailto:sock.irk@outlook.com" class="header-mail">sock.irk@outlook.com</a>
+                <a href="#" class="header-address">г. Иркутск, ул. Марии Ульяновой, 13а, 4 этаж</a>
+              </div>
+              <div class="header-order">
+                <span>Оставьте свой отзыв или задайте нам вопрос</span>
+                <button class="btn btn--orange">Отправить сообщение</button>
+              </div>
             </div>
-            <a class="header-phone d-block d-lg-none" href="tel:88001234567">8 (800) 123-45-67</a>
+
 
           </nav>
         </div>
