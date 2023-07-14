@@ -295,7 +295,7 @@
                     z-index: 1;
                     transition: all .2s linear;
                     visibility: hidden;
-                    opacity: 0;
+                    opacity: 0;                  
                     position: absolute;
                     padding-top: 16px;
                     // padding-left: 26px;
@@ -658,9 +658,11 @@
     z-index: 1;
     visibility: visible;
     opacity: 0;
+      display: none;
     &.active {
         opacity: 1;
         visibility: visible;
+        display: block;
     }
  
 

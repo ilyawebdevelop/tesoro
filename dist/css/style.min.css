@@ -12221,10 +12221,12 @@ h5 {
   z-index: 1;
   visibility: visible;
   opacity: 0;
+  display: none;
 }
 .catalog-menu.active {
   opacity: 1;
   visibility: visible;
+  display: block;
 }
 .catalog-menu ul li a {
   padding-top: 16px;
