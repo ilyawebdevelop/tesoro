@@ -22,6 +22,9 @@ let searchContent = document.querySelector('.header-search');
 let searchBtnSm = document.querySelector('.mobile-search');
 let headerFormMobileClose = document.querySelector('.header-form-close');
 
+let catalogBtn = document.querySelector('.header-catalog-btn');
+let catalogMenu = document.querySelector('.catalog-menu');
+
 
 const menuLine1 = document.querySelector('.top-bun');
 const menuLine2 = document.querySelector('.meat');
@@ -66,14 +69,24 @@ document.addEventListener('click', function (e) {
   const its_searchContent = target == searchContent || searchContent.contains(target);
   const its_searchBtnCall = target == searchBtnSm || searchBtnSm.contains(target);
   const its_btnSearchForm = target == btnSearchForm || btnSearchForm.contains(target);
+  const its_btnCatalog = target == catalogBtn || catalogBtn.contains(target);
+  const its_catalogMenu = target == catalogMenu || catalogMenu.contains(target);
 
 
   if (!its_inputSearch && !its_searchContent && !its_btnSearchForm && !its_searchBtnCall) {
     searchContent.classList.remove('active');
   }
+  if (!its_btnCatalog && !its_catalogMenu) {
+    catalogMenu.classList.remove('active');
+  }
+
 
 });
 
+
+catalogBtn.addEventListener('click', () => {
+  catalogMenu.classList.toggle('active');
+});
 
 // search initialize in mobile-screen
 searchBtnSm.addEventListener('click', () => {
@@ -371,3 +384,4 @@ var mySwiperCert = new Swiper(certSlider, {
     },
   },
 });
+
