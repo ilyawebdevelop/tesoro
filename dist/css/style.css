@@ -11822,8 +11822,8 @@ h5 {
 @media (max-width: 575px) {
   .header__nav.open {
     top: 23px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 .header__nav-list {
@@ -11859,6 +11859,8 @@ h5 {
 @media (max-width: 575px) {
   .header__nav-list {
     margin-top: 66px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 .header__nav-list li {
@@ -12202,6 +12204,12 @@ h5 {
 
 .contacts-sm {
   padding-bottom: 80px;
+}
+@media (max-width: 575px) {
+  .contacts-sm {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 .header-content__bottom {

@@ -218,8 +218,8 @@
 
             @media(max-width: 575px) {
                 top: 23px;
-                padding-left: 10px;
-                padding-right: 10px;
+                padding-left: 0;
+                padding-right: 0;
             }
 
             // nav {
@@ -260,6 +260,8 @@
 
             @media(max-width: 575px) {
                 margin-top: 66px;
+                padding-left: 10px;
+                padding-right: 10px;
             }
 
             li {
@@ -639,6 +641,10 @@
 
 .contacts-sm {
     padding-bottom: 80px;
+    @media(max-width: 575px){
+       padding-left: 10px;
+       padding-right: 10px; 
+    }
 }
 
 .header-content__bottom {
