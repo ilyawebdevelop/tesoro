@@ -12,8 +12,11 @@
     img {
         border-radius: 20px 20px 10px 10px;
         max-height: 470px;
+        width: 100%;
+        object-fit: cover;
         @media(max-width: 575px){
-            max-height: 325px;
+            max-height: unset;
+            height: 84vw;
         }
     }
 }
