@@ -39,7 +39,19 @@
 
     &-top {
         padding-bottom: 60px;
-        border-bottom: 1px solid rgba(41, 46, 68, 0.4);
+        // border-bottom: 1px solid rgba(41, 46, 68, 0.4);
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            width: calc(100% - 24px);
+            height: 1px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            bottom: 0;
+            background-color: rgba(41, 46, 68, 0.4);
+        }
         @media(max-width: 991px){
             padding-bottom: 32px;
         }

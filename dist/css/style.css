@@ -12221,7 +12221,7 @@ h5 {
   padding-right: 0;
   position: absolute;
   left: 10px;
-  top: 100%;
+  top: calc(100% + 10px);
   box-shadow: 0px 7px 20px 0px rgba(45, 47, 84, 0.1);
   width: max-content;
   background-color: #fff;
@@ -12235,6 +12235,9 @@ h5 {
   opacity: 1;
   visibility: visible;
   display: block;
+}
+.catalog-menu ul li:not(:first-child) > a {
+  border-top: 1px solid #F2F5F8;
 }
 .catalog-menu ul li a {
   padding-top: 16px;
@@ -16031,7 +16034,18 @@ h5 {
 }
 .footer-top {
   padding-bottom: 60px;
-  border-bottom: 1px solid rgba(41, 46, 68, 0.4);
+  position: relative;
+}
+.footer-top::before {
+  content: "";
+  position: absolute;
+  width: calc(100% - 24px);
+  height: 1px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 0;
+  background-color: rgba(41, 46, 68, 0.4);
 }
 @media (max-width: 991px) {
   .footer-top {

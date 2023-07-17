@@ -656,7 +656,7 @@
     padding-right: 0;
     position: absolute;
     left: 10px;
-    top: 100%;
+    top: calc(100% + 10px);
     box-shadow: 0px 7px 20px 0px rgba(45, 47, 84, 0.10);
     width: max-content;
     background-color: #fff;
@@ -674,6 +674,11 @@
 
     ul {
         li {
+            &:not(:first-child){
+              &>a {
+                border-top: 1px solid #F2F5F8;
+              }
+            }
            
             a {
                 padding-top: 16px;
