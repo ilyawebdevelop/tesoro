@@ -5,6 +5,12 @@
     @media(max-width: 991px){
         padding-top: 60px;
     }
+    .title-wrapper {
+        margin-bottom: 40px;
+        @media(max-width: 991px){
+            margin-bottom: 24px;
+        }
+    }
     &-slider {
         @media(max-width: 767px){
             padding-right: 75px;

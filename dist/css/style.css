@@ -14626,6 +14626,11 @@ h5 {
 .steps-slider-sect .title-wrapper {
   margin-bottom: 40px;
 }
+@media (max-width: 991px) {
+  .steps-slider-sect .title-wrapper {
+    margin-bottom: 24px;
+  }
+}
 .steps-slider-sect h2 {
   max-width: 800px;
 }
@@ -15943,6 +15948,14 @@ h5 {
 @media (max-width: 991px) {
   .cert {
     padding-top: 60px;
+  }
+}
+.cert .title-wrapper {
+  margin-bottom: 40px;
+}
+@media (max-width: 991px) {
+  .cert .title-wrapper {
+    margin-bottom: 24px;
   }
 }
 @media (max-width: 767px) {

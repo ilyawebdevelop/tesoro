@@ -107,6 +107,9 @@
     }
     .title-wrapper {
         margin-bottom: 40px;
+        @media(max-width: 991px){
+            margin-bottom: 24px;
+        }
     }
     h2 {
         max-width: 800px;
