@@ -84,6 +84,8 @@
     background-color: #ECECEC;
     @media(max-width: 991px){
         background-color: #F2F5F8;
+        border-bottom-left-radius: 24px;
+        border-bottom-right-radius: 24px;
     }
     .intro__title {
         max-width: 100%;

@@ -13620,6 +13620,8 @@ h5 {
 @media (max-width: 991px) {
   .individual-intro {
     background-color: #F2F5F8;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
   }
 }
 .individual-intro .intro__title {
@@ -14776,6 +14778,8 @@ h5 {
 @media (max-width: 991px) {
   .opt-intro {
     padding-bottom: 0;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
   }
 }
 .opt-intro .breadcrumbs__list {

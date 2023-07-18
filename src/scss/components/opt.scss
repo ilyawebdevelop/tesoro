@@ -7,6 +7,8 @@
     padding-top: 0;
     @media(max-width: 991px){
         padding-bottom: 0;
+        border-bottom-left-radius: 24px;
+        border-bottom-right-radius: 24px;
     }
     .breadcrumbs__list {
         position: absolute;
