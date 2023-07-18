@@ -257,7 +257,7 @@ h5 {
       &:checked{
         &+label {
           .rect {
-            background: url('@img/icons/check-arrow.svg') no-repeat center center / 9px;
+            background: url('@img/icons/checked.svg') no-repeat center center / 9px;
           }
         }
       }
@@ -280,7 +280,11 @@ h5 {
         line-height: 16px;
       }
       a {
+        transition: color .2s linear;
         display: inline;
+        &:hover {
+          color: #fff;
+        }
       }
     }
   }
@@ -308,6 +312,7 @@ h5 {
     padding-top: 12px;
     border: 1px solid #FFF;
     width: 100%;
+    resize: none;
 
     &::placeholder {
       color: rgba(255, 255, 255, 0.60);     

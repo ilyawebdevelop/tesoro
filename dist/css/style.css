@@ -11084,7 +11084,7 @@ h5 {
   display: none;
 }
 .form-light .agreement input:checked + label .rect {
-  background: url("../img/icons/check-arrow.svg") no-repeat center center/9px;
+  background: url("../img/icons/checked.svg") no-repeat center center/9px;
 }
 .form-light .agreement .rect {
   width: 21px;
@@ -11105,7 +11105,11 @@ h5 {
   }
 }
 .form-light .agreement__text a {
+  transition: color 0.2s linear;
   display: inline;
+}
+.form-light .agreement__text a:hover {
+  color: #fff;
 }
 .form-light .form-input {
   padding-left: 16px;
@@ -11130,6 +11134,7 @@ h5 {
   padding-top: 12px;
   border: 1px solid #FFF;
   width: 100%;
+  resize: none;
 }
 .form-light textarea::placeholder {
   color: rgba(255, 255, 255, 0.6);
@@ -13634,6 +13639,11 @@ h5 {
 }
 .individual-intro .intro-left {
   padding-top: 38px;
+}
+@media (max-width: 991px) {
+  .individual-intro .intro-left {
+    padding-bottom: 22px;
+  }
 }
 .individual-intro .intro__text {
   max-width: 480px;

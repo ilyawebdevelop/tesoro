@@ -107,6 +107,9 @@
 
     .intro-left {
         padding-top: 38px;
+        @media(max-width: 991px){
+            padding-bottom: 22px;
+        }
     }
 
     .intro__text {
