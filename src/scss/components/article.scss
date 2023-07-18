@@ -1,11 +1,15 @@
 // article
 .article {
+    padding-top: 0;
     h2 {
         max-width: 750px;
         margin-bottom: 30px;
+        @media(max-width: 991px){
+            margin-bottom: 22px;
+        }
     }
     h3 {
-    //    font-weight: 500;
+    
     }
     &-image {
         width: 100%;

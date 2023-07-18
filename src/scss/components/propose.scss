@@ -1,6 +1,7 @@
 // propose
 .propose {
     &-slider {
+        border-radius: 20px;
         @media(max-width: 575px){
             padding-left: 10px;
             padding-right: 75px;

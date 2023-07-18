@@ -9,6 +9,7 @@
         max-width: 765px;
     }
     &-slider {
+        border-radius: 20px;
         @media(max-width: 575px){
             padding-right: 65px;
             overflow: visible;
